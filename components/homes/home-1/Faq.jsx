@@ -8,7 +8,7 @@ export default function Faq() {
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-8">
             <div className="title-area text-center ">
-              <h2 className="sec-title">What We Can Do for Our Clients</h2>
+              <h2 className="sec-title">Servicios que ofrecemos</h2>
             </div>
           </div>
           <div className="col-xl-8">

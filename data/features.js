@@ -85,39 +85,40 @@ export const featureData3 = [
 export const featureData4 = [
   {
     iconSrc: "/assets/img/icon/feature-icon1-1.svg",
-    title: "Branding Design",
+    title: "Optimización SEO",
     id: 14,
-    text: "We care success relationships fuel success we love building",
+    text: "Tus sitios estarán diseñados para destacar en los motores de búsqueda, atrayendo más tráfico orgánico y aumentando tu visibilidad online.",
   },
+  // tal vez falta aqui lo de Marketing. Pagina con analiticas o algo asi.
   {
     iconSrc: "/assets/img/icon/feature-icon1-2.svg",
-    title: "Web Development",
+    title: "Atención al Cliente",
     id: 15,
-    text: "We care success relationships fuel success we love building",
+    text: "Nos enorgullecemos de ofrecer una atención al cliente excepcional, asegurándonos de que todas tus necesidades y preguntas sean atendidas rápidamente.",
   },
   {
     iconSrc: "/assets/img/icon/feature-icon1-4.svg",
-    title: "Digital Marketing",
+    title: "Experiencia de Usuario",
     id: 16,
-    text: "We care success relationships fuel success we love building",
+    text: "Nos enfocamos en crear una experiencia de usuario intuitiva y agradable que mantenga a tus visitantes comprometidos y satisfechos.",
   },
   {
     iconSrc: "/assets/img/icon/feature-icon1-3.svg",
-    title: "Illustration Modelling",
+    title: "Rendimiento y Alta Conversión",
     id: 17,
-    text: "We care success relationships fuel success we love building",
+    text: "Diseñamos páginas web que no solo se ven bien, sino que también están optimizadas para cargar rápido y convertir visitantes en clientes.",
   },
   {
     iconSrc: "/assets/img/icon/feature-icon1-5.svg",
-    title: "Content Marketing",
+    title: "Diseño Responsivo e Interfaces de Usuario",
     id: 18,
-    text: "We care success relationships fuel success we love building",
+    text: "Creamos interfaces atractivas y responsivas que ofrecen una experiencia de navegación fluida en todos los dispositivos.",
   },
   {
     iconSrc: "/assets/img/icon/feature-icon1-6.svg",
-    title: "Social Advertising",
+    title: "Planes Mantenimiento Web y Hosting",
     id: 19,
-    text: "We care success relationships fuel success we love building",
+    text: "Ofrecemos planes flexibles para el mantenimiento y hosting de tu sitio web, garantizando que siempre esté seguro y en funcionamiento.",
   },
 ];
 export const allFeatures = [

@@ -9,6 +9,7 @@ import Team from "@/components/homes/common/Team";
 import Testimonials from "@/components/homes/common/Testimonials";
 import Hero from "@/components/homes/home-1/Hero";
 import Portfolio from "@/components/homes/home-1/Portfolio";
+import Features2 from "@/components/service/Features2";
 export const metadata = {
   title: "Banana Web Solutions",
 };
@@ -21,6 +22,7 @@ export default function HomePage1() {
       <About />
 
       <Faq />
+      <Features2 />
       <Portfolio />
       <Team />
       <Testimonials />

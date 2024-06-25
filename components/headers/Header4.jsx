@@ -1,11 +1,11 @@
 "use client";
-import SideMenu from "./component/SideMenu";
-import MobileNav from "./component/MobileNav";
-import MobileMenuSocials from "./component/MobileMenuSocials";
-import Nav from "./component/Nav";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import MobileMenuSocials from "./component/MobileMenuSocials";
+import MobileNav from "./component/MobileNav";
+import Nav from "./component/Nav";
+import SideMenu from "./component/SideMenu";
 
 export default function Header4() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Header4() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
     const handleDocumentClick = (event) => {
-      const menuWrapper = document.querySelector(".mobile-menu-wrapper");
+      const menuWrapperu = document.querySelector(".mobile-menu-wrapper");
       const menuContainer = document.querySelector(".mobile-menu-area");
 
       // Check if the click is outside of modal-content but inside modal-dialog

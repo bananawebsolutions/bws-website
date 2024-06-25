@@ -36,15 +36,18 @@ export default function About() {
                     Transforma tu prescencia online con soluciones a la medida
                   </h2>
                   <p className="sec-text mt-35">
-                    If you ask our clients what it’s like working with 36,
-                    they’ll talk about how much we care about their success. For
-                    us, real relationships fuel real success. We love building
-                    brands
+                    En{" "}
+                    <span className="bold-text">
+                      <i>Banana Web Solutions</i>
+                    </span>{" "}
+                    somos expertos en transformar tu visión en realidad digital.
                   </p>
                   <p className="sec-text mt-30">
-                    We are a creative agency working with brands building
-                    insightful strategy, creating unique designs and crafting
-                    value
+                    Con años de experiencia en el desarrollo web y una pasión
+                    por la innovación, nos dedicamos a crear soluciones web que
+                    no solo cumplen con tus expectativas, sino que las superan.
+                    Cada proyecto es una oportunidad para aportar creatividad,
+                    tecnología y resultados medibles.
                   </p>
                   <div className="btn-wrap mt-50">
                     <Link scroll={false} href="/about" className="link-btn">
