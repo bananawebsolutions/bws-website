@@ -5,6 +5,7 @@ import Blogs from "@/components/homes/common/Blogs";
 import About from "@/components/homes/home-1/About";
 import Faq from "@/components/homes/home-1/Faq";
 
+import MarqueeComponent from "@/components/common/Marquee";
 import Team from "@/components/homes/common/Team";
 import Testimonials from "@/components/homes/common/Testimonials";
 import Hero from "@/components/homes/home-1/Hero";
@@ -20,11 +21,11 @@ export default function HomePage1() {
       <Header1 />
       <Hero />
       <About />
+      <MarqueeComponent />
 
       <Faq />
       <Features2 />
       <Portfolio />
-      <Team />
       <Testimonials />
       <Blogs />
       <Footer1 />
