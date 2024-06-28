@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     id: 1,
-    title: "HOME",
+    title: "INICIO",
     isActive: true,
     subMenuItems: [
       { id: 11, label: "Digital Agency", link: "/" },
@@ -16,7 +16,7 @@ export const menuItems = [
   },
   {
     id: 2,
-    title: "PAGES",
+    title: "NOSOTROS",
     subMenuItems: [
       { id: 21, label: "About Page", link: "/about" },
       {
@@ -43,7 +43,7 @@ export const menuItems = [
   },
   {
     id: 3,
-    title: "PORTFOLIO",
+    title: "SERVICIOS",
     subMenuItems: [
       { id: 31, label: "Portfolio Masonary", link: "/project" },
       { id: 32, label: "Portfolio Pinterest", link: "/project-2" },
@@ -65,7 +65,7 @@ export const menuItems = [
   },
   {
     id: 5,
-    title: "CONTACT",
+    title: "CONTACTO",
     link: "/contact",
   },
 ];

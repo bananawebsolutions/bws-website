@@ -20,10 +20,10 @@ export default function Contact() {
           <div className="col-lg-6">
             <div className="contact-form-wrap">
               <div className="title-area mb-30">
-                <h2 className="sec-title">Have Any Project on Your Mind?</h2>
+                <h2 className="sec-title">¿Qué Proyecto Tienes en Mente?</h2>
                 <p>
-                  Great! We're excited to hear from you and let's start
-                  something
+                  Estamos emocionados de conocer la visión de tu proyecto,
+                  tenemos muchas ganas de comenzar a trabajar contigo.
                 </p>
               </div>
               <form
@@ -39,7 +39,7 @@ export default function Contact() {
                         className="form-control style-border"
                         name="name"
                         id="name"
-                        placeholder="Full name*"
+                        placeholder="Nombre*"
                       />
                     </div>
                   </div>
@@ -51,7 +51,7 @@ export default function Contact() {
                         className="form-control style-border"
                         name="email"
                         id="email"
-                        placeholder="Email address*"
+                        placeholder="Correo electrónico*"
                       />
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                         className="form-control style-border"
                         name="website"
                         id="website"
-                        placeholder="Website link"
+                        placeholder="Link de tu sitio web"
                       />
                     </div>
                   </div>
@@ -72,7 +72,7 @@ export default function Contact() {
                       <textarea
                         required
                         name="message"
-                        placeholder="How Can We Help You*"
+                        placeholder="¿Cómo podemos ayudarte?*"
                         id="contactForm"
                         className="form-control style-border"
                       ></textarea>

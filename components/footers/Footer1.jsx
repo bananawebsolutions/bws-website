@@ -1,8 +1,8 @@
-import React from "react";
-import Socials from "./component/Socials";
 import Link from "next/link";
+import React from "react";
 import FooterLinks1 from "./component/FooterLinks1";
 import FooterLinks2 from "./component/FooterLinks2";
+import Socials from "./component/Socials";
 
 export default function Footer1() {
   return (
@@ -11,18 +11,18 @@ export default function Footer1() {
         <div className="footer-top space">
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-6">
-              <h2 className="footer-top-title">Let’s Work Together</h2>
+              <h2 className="footer-top-title">Trabajemos Juntos</h2>
             </div>
             <div className="col-lg-5">
               <div className="footer-top-wrap">
                 <p className="mb-30">
-                  We are digital agency that helps businesses develop immersive
-                  and engaging user experiences
+                  Transformamos tu visión en una realidad digital. Tu proyecto
+                  estará en buenas manos.
                 </p>
                 <Link scroll={false} href="/contact" className="btn">
                   <span className="link-effect">
-                    <span className="effect-1">LET'S TALK WITH US</span>
-                    <span className="effect-1">LET'S TALK WITH US</span>
+                    <span className="effect-1">¿QUÉ TIENES EN MENTE?</span>
+                    <span className="effect-1">¿QUÉ TIENES EN MENTE?</span>
                   </span>
                 </Link>
               </div>
