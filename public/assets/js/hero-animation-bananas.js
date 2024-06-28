@@ -40,6 +40,13 @@ class Shapes {
     this.container = new PIXI.Container();
     this.graphicsContainer = new PIXI.Container();
     this.graphicA = new PIXI.Graphics();
+    // this.graphicA.moveTo(400, 300);
+    // this.graphicA.beginFill(0xffff00); // Yellow color for the banana
+    // this.graphicA.lineTo(450, 200);
+    // this.graphicA.lineTo(500, 300);
+    // this.graphicA.arcTo(475, 350, 425, 350, 50);
+    // this.graphicA.lineTo(400, 300);
+    // this.graphicA.endFill();
     this.graphicA.blendMode = PIXI.BLEND_MODES.MULTIPLY;
     this.graphicB = new PIXI.Graphics();
     this.graphicB.blendMode = PIXI.BLEND_MODES.MULTIPLY;
