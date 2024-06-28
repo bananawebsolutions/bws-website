@@ -1,10 +1,15 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import HeroAnimation from "./HeroAnimation";
 
 export default function Hero() {
   return (
-    <div className="hero-wrapper hero-1" id="hero">
+    <div className="hero-wrapper hero-1 hero-position" id="hero">
+      <div className="hero-animation-banana">
+        <HeroAnimation />
+      </div>
       <div className="container">
         <div className="hero-style1">
           <div className="row">
