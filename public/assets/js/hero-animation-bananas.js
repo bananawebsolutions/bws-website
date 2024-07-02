@@ -40,9 +40,7 @@ class Shapes {
     this.container = new PIXI.Container();
     this.graphicsContainer = new PIXI.Container();
     this.graphicA = new PIXI.Graphics();
-    this.graphicA.blendMode = PIXI.BLEND_MODES.MULTIPLY;
     this.graphicB = new PIXI.Graphics();
-    this.graphicB.blendMode = PIXI.BLEND_MODES.MULTIPLY;
 
     this.draw(0);
 
@@ -70,15 +68,15 @@ class Shapes {
   }
 
   draw(colorsIndex) {
-    if (colorsIndex === undefined) {
-      this.colorsIndex = ++this.colorsIndex % internals.colors.length;
-    }
-
-    const colors = internals.colors[this.colorsIndex];
+    const yellowColor = 0xffff00; // Yellow color in hexadecimal
+    const complementaryColor = 0x1805db;
+    const blackColor = 0x000000; // Black color in hexadecimal
+    const lineWidth = 2; // Outline thickness
 
     if (this.index % 2) {
       this.graphicA.clear();
-      this.graphicA.beginFill(colors[0]);
+      this.graphicA.lineStyle(lineWidth, blackColor);
+      this.graphicA.beginFill(yellowColor);
       this.graphicA.drawRect(
         internals.random(0, this.offset),
         internals.random(0, this.offset),
@@ -87,7 +85,8 @@ class Shapes {
       );
       this.graphicA.endFill();
 
-      this.graphicA.beginFill(colors[1]);
+      this.graphicA.lineStyle(lineWidth, blackColor);
+      this.graphicA.beginFill(complementaryColor);
       this.graphicA.drawRect(
         internals.random(0, this.offset),
         internals.random(0, this.offset),
@@ -97,7 +96,8 @@ class Shapes {
       this.graphicA.endFill();
     } else {
       this.graphicB.clear();
-      this.graphicB.beginFill(colors[0]);
+      this.graphicB.lineStyle(lineWidth, blackColor);
+      this.graphicB.beginFill(yellowColor);
       this.graphicB.drawCircle(
         internals.random(0, this.offset),
         internals.random(0, this.offset),
@@ -105,7 +105,8 @@ class Shapes {
       );
       this.graphicB.endFill();
 
-      this.graphicB.beginFill(colors[1]);
+      this.graphicB.lineStyle(lineWidth, blackColor);
+      this.graphicB.beginFill(complementaryColor);
       this.graphicB.drawCircle(
         internals.random(0, this.offset),
         internals.random(0, this.offset),
