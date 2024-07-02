@@ -40,13 +40,6 @@ class Shapes {
     this.container = new PIXI.Container();
     this.graphicsContainer = new PIXI.Container();
     this.graphicA = new PIXI.Graphics();
-    // this.graphicA.moveTo(400, 300);
-    // this.graphicA.beginFill(0xffff00); // Yellow color for the banana
-    // this.graphicA.lineTo(450, 200);
-    // this.graphicA.lineTo(500, 300);
-    // this.graphicA.arcTo(475, 350, 425, 350, 50);
-    // this.graphicA.lineTo(400, 300);
-    // this.graphicA.endFill();
     this.graphicA.blendMode = PIXI.BLEND_MODES.MULTIPLY;
     this.graphicB = new PIXI.Graphics();
     this.graphicB.blendMode = PIXI.BLEND_MODES.MULTIPLY;
@@ -190,15 +183,15 @@ for (let i = 0; i < internals.config.totalGroups; i++) {
 // -------
 // Window CP is from codepen
 // window.CP.exitedLoop(0);
-function changeColors() {
-  const len = internals.shapes.length;
+// function changeColors() {
+//   const len = internals.shapes.length;
 
-  for (let i = 0; i < len; i++) {
-    // if (window.CP.shouldStopExecution(1)) break;
-    internals.shapes[i].draw();
-  }
-  // window.CP.exitedLoop(1);
-}
+//   for (let i = 0; i < len; i++) {
+//     // if (window.CP.shouldStopExecution(1)) break;
+//     internals.shapes[i].draw();
+//   }
+//   // window.CP.exitedLoop(1);
+// }
 
 function resize() {
   setTimeout(() => {
@@ -212,8 +205,8 @@ function render() {
   internals.app.renderer.render(internals.app.stage);
 }
 
-window.addEventListener("click", changeColors);
-window.addEventListener("touchstart", changeColors);
+// window.addEventListener("click", changeColors);
+// window.addEventListener("touchstart", changeColors);
 window.addEventListener("resize", resize);
 window.addEventListener("orientationchange", resize);
 TweenLite.ticker.addEventListener("tick", render);

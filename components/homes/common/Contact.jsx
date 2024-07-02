@@ -16,7 +16,7 @@ export default function Contact() {
         ></iframe>
       </div>
       <div className="container">
-        <div className="row align-items-center justify-content-end">
+        <div className="row align-items-center justify-content-center">
           <div className="col-lg-6">
             <div className="contact-form-wrap">
               <div className="title-area mb-30">
