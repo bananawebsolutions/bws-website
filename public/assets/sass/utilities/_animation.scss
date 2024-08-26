@@ -108,10 +108,9 @@
 // This is for Progress bar animation also has a js code
 @keyframes animate-positive {
   0% {
-    width: 0; 
-  } 
+    width: 0;
+  }
 }
-
 
 .scalein.slider-animated {
   --animation-name: scalein;
@@ -146,7 +145,6 @@
 .rollinright.slider-animated {
   --animation-name: rollinright;
 }
-
 
 .scalein,
 .slidetopleft,
@@ -235,20 +233,19 @@
   }
 }
 
-
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  to { 
-      transform: rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
   0% {
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-top-color: transparent;
     border-left-color: transparent;
-  }  
+  }
   75% {
     border-top-color: #fff;
     border-left-color: #fff;
@@ -264,54 +261,57 @@
 }
 /*img-animation**********************/
 .img-custom-anim-right {
-  animation: img-anim-right 1.3s forwards cubic-bezier(.645,.045,.355,1) .4s;
+  animation: img-anim-right 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1)
+    0.4s;
   opacity: 0;
 }
 @keyframes img-anim-right {
   0% {
-      transform: translateX(5%);
-      clip-path: inset(0 0 0 100%);
-      opacity: 0;
+    transform: translateX(5%);
+    clip-path: inset(0 0 0 100%);
+    opacity: 0;
   }
 
   100% {
-      transform: translateX(0);
-      clip-path: inset(0 0 0 0);
-      opacity: 1;
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
   }
 }
-.img-custom-anim-left {
-  animation: img-anim-left 1.3s forwards cubic-bezier(.645,.045,.355,1) .4s;
-  opacity: 0;
-}
-@keyframes img-anim-left {
-  0% {
-      transform: translateX(-5%);
-      clip-path: inset(0 100% 0 0);
-      opacity: 0;
-  }
-
-  100% {
-      transform: translateX(0);
-      clip-path: inset(0 0 0 0);
-      opacity: 1;
-  }
-}
-
+// .img-custom-anim-left {
+//   animation: img-anim-left 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1)
+//     0.4s;
+//   opacity: 0;
+// }
+// @keyframes img-anim-left {
+//   0% {
+//     transform: translateX(-5%);
+//     clip-path: inset(0 100% 0 0);
+//     opacity: 0;
+//   }
+//
+//   100% {
+//     transform: translateX(0);
+//     clip-path: inset(0 0 0 0);
+//     opacity: 1;
+//   }
+// }
+//
 .img-custom-anim-top {
-  animation: img-anim-top 1.3s forwards cubic-bezier(.645,.045,.355,1);
+  animation: img-anim-top 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1);
   opacity: 0;
 }
 @keyframes img-anim-top {
   0% {
-      transform: translateY(-5%);
-      clip-path: inset(0 0 100% 0);
-      opacity: 0;
+    transform: translateY(-5%);
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0);
-      clip-path: inset(0 0 0 0);
-      opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
   }
 }
+

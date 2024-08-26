@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import "../public/assets/css/vendor.css";
 import "../public/assets/sass/style.scss";
+import "../public/assets/css/animation.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ScrollTop from "@/components/common/ScrollTop";
 import { Unbounded, Poppins } from "next/font/google";
