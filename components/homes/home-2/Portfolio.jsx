@@ -65,7 +65,7 @@ export default function Portfolio() {
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-9">
             <div className="title-area text-center">
-              <h2 className="sec-title">Discover Our Selected Projects</h2>
+              <h2 className="sec-title">Proyectos Seleccionados</h2>
             </div>
           </div>
         </div>

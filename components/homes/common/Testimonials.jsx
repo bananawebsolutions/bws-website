@@ -26,9 +26,10 @@ export default function Testimonials() {
   return (
     <div className="testimonial-area-1 space bg-theme shape-mockup-wrap">
       <div
-        className="testimonial-img-1-1 shape-mockup wow img-custom-anim-right animated"
-        data-wow-duration="1.5s"
-        data-wow-delay="0.2s"
+        className="testimonial-img-1-1 shape-mockup wow animated"
+        // className="testimonial-img-1-1 shape-mockup wow img-custom-anim-right animated"
+        // data-wow-duration="1.5s"
+        // data-wow-delay="0.2s"
         style={{ right: "0px", top: "-100px", bottom: "100px" }}
       >
         <Image

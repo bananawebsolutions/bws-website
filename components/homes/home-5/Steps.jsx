@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Steps() {
   return (
-    <div className="feature-area-1 space">
+    <div className="feature-area-1 space" style={{ background: "black" }}>
       <div className="container">
         <div className="title-area text-center">
-          <h2 className="sec-title text-smoke">Three Step Process</h2>
+          <h2 className="sec-title text-smoke">Proceso de Tres Pasos</h2>
         </div>
         <div className="row gx-0 gy-40">
           {steps.map((step, index) => (

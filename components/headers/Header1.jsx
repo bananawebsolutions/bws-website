@@ -114,13 +114,14 @@ export default function Header1() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <Link scroll={false} href="/">
-                      <Image
-                        width={86}
-                        height={24}
-                        src="/assets/img/logo.svg"
-                        alt="logo"
-                      />
+                    <Link className="logo-style" scroll={false} href="/">
+                      {/* <Image */}
+                      {/*   width={86} */}
+                      {/*   height={24} */}
+                      {/*   src="/assets/img/logo.svg" */}
+                      {/*   alt="logo" */}
+                      {/* /> */}
+                      BWS
                     </Link>
                   </div>
                 </div>
@@ -144,26 +145,26 @@ export default function Header1() {
                 </div>
                 <div className="col-auto d-none d-lg-block">
                   <div className="header-button">
-                    <button
-                      type="button"
-                      className="search-btn searchBoxToggler"
-                      onClick={() =>
-                        document
-                          .getElementsByClassName("popup-search-box")[0]
-                          ?.classList.toggle("show")
-                      }
-                    >
-                      <Image
-                        width={24}
-                        height={24}
-                        src="/assets/img/icon/search.svg"
-                        alt="icon"
-                      />
-                      <span className="link-effect">
-                        <span className="effect-1">SEARCH</span>
-                        <span className="effect-1">SEARCH</span>
-                      </span>
-                    </button>
+                    {/* <button */}
+                    {/*   type="button" */}
+                    {/*   className="search-btn searchBoxToggler" */}
+                    {/*   onClick={() => */}
+                    {/*     document */}
+                    {/*       .getElementsByClassName("popup-search-box")[0] */}
+                    {/*       ?.classList.toggle("show") */}
+                    {/*   } */}
+                    {/* > */}
+                    {/*   <Image */}
+                    {/*     width={24} */}
+                    {/*     height={24} */}
+                    {/*     src="/assets/img/icon/search.svg" */}
+                    {/*     alt="icon" */}
+                    {/*   /> */}
+                    {/*   <span className="link-effect"> */}
+                    {/*     <span className="effect-1">SEARCH</span> */}
+                    {/*     <span className="effect-1">SEARCH</span> */}
+                    {/*   </span> */}
+                    {/* </button> */}
                     <button
                       type="button"
                       className="sidebar-btn sideMenuToggler"

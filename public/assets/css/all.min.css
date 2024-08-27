@@ -4595,7 +4595,8 @@
   font-weight: 400;
   font-display: block;
   src: url(../fonts/fa-brands-400.woff);
-  src: url(../fonts/fa-brands-400.woff?#iefix) format("embedded-opentype"),
+  src:
+    url(../fonts/fa-brands-400.woff?#iefix) format("embedded-opentype"),
     url(../fonts/fa-brands-400.woff2) format("woff2"),
     url(../fonts/fa-brands-400.woff) format("woff"),
     url(../fonts/fa-brands-400.woff) format("truetype"),
@@ -4610,7 +4611,8 @@
   font-weight: 400;
   font-display: block;
   src: url(../fonts/fa-regular-400.woff);
-  src: url(../fonts/fa-regular-400.woff?#iefix) format("embedded-opentype"),
+  src:
+    url(../fonts/fa-regular-400.woff?#iefix) format("embedded-opentype"),
     url(../fonts/fa-regular-400.woff2) format("woff2"),
     url(../fonts/fa-regular-400.woff) format("woff"),
     url(../fonts/fa-regular-400.ttf) format("truetype"),
@@ -4626,7 +4628,8 @@
   font-weight: 900;
   font-display: block;
   src: url(../fonts/fa-solid-900.woff);
-  src: url(../fonts/fa-solid-900.woff?#iefix) format("embedded-opentype"),
+  src:
+    url(../fonts/fa-solid-900.woff?#iefix) format("embedded-opentype"),
     url(../fonts/fa-solid-900.woff2) format("woff2"),
     url(../fonts/fa-solid-900.woff) format("woff"),
     url(../fonts/fa-solid-900.ttf) format("truetype"),
@@ -4648,4 +4651,27 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: -10;
+}
+
+.banana-logo-inline {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.banana-logo {
+  display: block;
+}
+
+.banana-logo-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .banana-logo {
+    display: none;
+  }
+  .banana-logo-mobile {
+    display: block;
+  }
 }

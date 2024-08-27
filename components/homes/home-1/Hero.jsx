@@ -13,12 +13,29 @@ export default function Hero() {
       <div className="container">
         <div className="hero-style1">
           <div className="row">
+            <span className="banana-logo-mobile">
+              <Image
+                src="/assets/img/hero/bws-logo.png"
+                alt="Banana Web Solutions Logo"
+                width={150}
+                height={150}
+              />
+            </span>
             <div className="col-lg-12">
               {/* <h1 className="hero-title wow img-custom-anim-left animated">
                 Next Generation
               </h1> */}
-              <h1 className="hero-title wow animated">Banana</h1>
-
+              <div className="banana-logo-inline">
+                <h1 className="hero-title wow animated">Banana</h1>
+                <span className="banana-logo">
+                  <Image
+                    src="/assets/img/hero/bws-logo.png"
+                    alt="Banana Web Solutions Logo"
+                    width={200}
+                    height={200}
+                  />
+                </span>
+              </div>
               {/* <h1 className="hero-title text-lg-end wow img-custom-anim-right animated">
                 Digital Agency
               </h1> */}

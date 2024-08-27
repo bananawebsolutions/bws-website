@@ -69,7 +69,7 @@ class Shapes {
 
   draw(colorsIndex) {
     const yellowColor = 0xffff00; // Yellow color in hexadecimal
-    const complementaryColor = 0x1805db;
+    const complementaryColor = 0x000000;
     const blackColor = 0x000000; // Black color in hexadecimal
     const lineWidth = 2; // Outline thickness
 
@@ -81,7 +81,7 @@ class Shapes {
         internals.random(0, this.offset),
         internals.random(0, this.offset),
         60,
-        60
+        60,
       );
       this.graphicA.endFill();
 
@@ -91,7 +91,7 @@ class Shapes {
         internals.random(0, this.offset),
         internals.random(0, this.offset),
         60,
-        60
+        60,
       );
       this.graphicA.endFill();
     } else {
@@ -101,7 +101,7 @@ class Shapes {
       this.graphicB.drawCircle(
         internals.random(0, this.offset),
         internals.random(0, this.offset),
-        30
+        30,
       );
       this.graphicB.endFill();
 
@@ -110,7 +110,7 @@ class Shapes {
       this.graphicB.drawCircle(
         internals.random(0, this.offset),
         internals.random(0, this.offset),
-        30
+        30,
       );
       this.graphicB.endFill();
     }
@@ -128,7 +128,7 @@ class Shapes {
     if (Math.random() > 0.5) {
       positionX = internals.random(
         0 - this.getWidth(),
-        internals.w + this.getWidth()
+        internals.w + this.getWidth(),
       );
       positionY =
         Math.random() > 0.5
@@ -139,7 +139,7 @@ class Shapes {
         Math.random() > 0.5 ? internals.w + this.getWidth() : -this.getWidth();
       positionY = internals.random(
         0 - this.getHeight(),
-        internals.h + this.getHeight()
+        internals.h + this.getHeight(),
       );
     }
 
