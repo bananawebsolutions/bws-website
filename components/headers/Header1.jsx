@@ -106,7 +106,7 @@ export default function Header1() {
       {/*--==============================
 	Header Area
     ==============================*/}
-      <header className="nav-header header-layout1">
+      <header className="nav-header  header-layout1">
         <div className={`sticky-wrapper ${isScrolled ? "header-sticky" : ""} `}>
           {/*-- Main Menu Area */}
           <div className="menu-area">

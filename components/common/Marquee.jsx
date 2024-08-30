@@ -6,25 +6,25 @@ export default function MarqueeComponent() {
     {
       id: 1,
       href: "#",
-      text: "Soluciones Digitales Personalizadas",
+      text: "Soluciones Web Personalizadas",
       icon: "fas fa-star-of-life",
     },
     {
       id: 2,
       href: "#",
-      text: "Soluciones Digitales Personalizadas",
+      text: "Soluciones Web Personalizadas",
       icon: "fas fa-star-of-life",
     },
     {
       id: 3,
       href: "#",
-      text: "Soluciones Digitales Personalizadas",
+      text: "Soluciones Web Personalizadas",
       icon: "fas fa-star-of-life",
     },
     {
       id: 4,
       href: "#",
-      text: "Soluciones Digitales Personalizadas",
+      text: "Soluciones Web Personalizadas",
       icon: "fas fa-star-of-life",
     },
   ];

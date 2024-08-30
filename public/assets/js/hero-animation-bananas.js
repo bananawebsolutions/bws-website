@@ -68,8 +68,8 @@ class Shapes {
   }
 
   draw(colorsIndex) {
-    const yellowColor = 0xffff00; // Yellow color in hexadecimal
-    const complementaryColor = 0x000000;
+    const yellowColor = 0xfade36; // Yellow color in hexadecimal
+    const complementaryColor = 0xffffff;
     const blackColor = 0x000000; // Black color in hexadecimal
     const lineWidth = 2; // Outline thickness
 
@@ -123,7 +123,7 @@ class Shapes {
 
     const rotation = internals.random(-360, 360);
     const scale = internals.random(0.5, 1.25);
-    const delay = this.index * 0.1;
+    const delay = this.index * 0.8;
 
     if (Math.random() > 0.5) {
       positionX = internals.random(
