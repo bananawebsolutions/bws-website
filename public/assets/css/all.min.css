@@ -4675,3 +4675,30 @@ canvas {
     display: block;
   }
 }
+
+.doodle-container {
+  position: absolute;
+  bottom: 100px;
+  rotate: 0deg;
+  right: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .doodle-container {
+    rotate: 80deg;
+    width: 100%;
+    max-width: 200px;
+    left: 20px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .doodle-container {
+    rotate: 80deg;
+    width: 100%;
+    max-width: 150px;
+    left: 20px;
+    bottom: -20px;
+  }
+}

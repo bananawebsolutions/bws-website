@@ -123,7 +123,7 @@ class Shapes {
 
     const rotation = internals.random(-360, 360);
     const scale = internals.random(0.5, 1.25);
-    const delay = this.index * 0.8;
+    const delay = this.index * 0.3;
 
     if (Math.random() > 0.5) {
       positionX = internals.random(

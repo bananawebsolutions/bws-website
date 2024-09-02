@@ -77,10 +77,7 @@ export default function Portfolio() {
         >
           {portfolioData2.map((item) => (
             <div key={item.id} className="col-lg-4 sliderItem">
-              <a
-                href={`/project-details/${item.id}`}
-                className="portfolio-wrap style2"
-              >
+              <div className="portfolio-wrap style2">
                 <div className="portfolio-thumb">
                   <Image
                     width={746}
@@ -95,7 +92,7 @@ export default function Portfolio() {
                   </ul>
                   <h3 className="portfolio-title">{item.title}</h3>
                 </div>
-              </a>
+              </div>
             </div>
           ))}
         </Slider>

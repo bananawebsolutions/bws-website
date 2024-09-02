@@ -23,16 +23,13 @@ export default function About() {
           width={838}
           height={730}
           src="/assets/img/normal/macbook2.png"
-          alt="Macbook with hero image with a banana"
+          alt="img"
         />
-        <div className="doodle-container">
-          <Image
-            width={250}
-            height={250}
-            src="/assets/img/normal/doodle-arrow.png"
-            alt="dodle of an arrow"
-          />
-        </div>
+        <Image
+          width={500}
+          height="auto"
+          src="/assets/img/normal/doodle-arrow.png"
+        />
       </div>
       <div className="container">
         <div className="row align-items-center justify-content-end">
