@@ -37,7 +37,7 @@ export default function About() {
       <div className="container">
         <div className="row align-items-center justify-content-end">
           <div className="col-lg-6">
-            <div className="overflow-hidden">
+            <div>
               <div className="about-content-wrap ">
                 <div className="title-area mb-0">
                   <h2 className="sec-title">
