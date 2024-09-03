@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <div className="contact-area-1 space bg-theme shape-mockup-wrap">
+    <div className="contact-area-1 space shape-mockup-wrap">
       <div
         className="contact-map shape-mockup wow img-custom-anim-left animated"
         data-wow-duration="1.5s"
@@ -82,8 +82,8 @@ export default function Contact() {
                 <div className="form-btn col-12">
                   <button type="submit" className="btn mt-20">
                     <span className="link-effect">
-                      <span className="effect-1">SEND MESSAGE</span>
-                      <span className="effect-1">SEND MESSAGE</span>
+                      <span className="effect-1">ENVIAR MENSAJE</span>
+                      <span className="effect-1">ENVIAR MENSAJE</span>
                     </span>
                   </button>
                 </div>

@@ -30,12 +30,12 @@ export default function Testimonials() {
         // className="testimonial-img-1-1 shape-mockup wow img-custom-anim-right animated"
         // data-wow-duration="1.5s"
         // data-wow-delay="0.2s"
-        style={{ right: "0px", top: "-100px", bottom: "100px" }}
+        style={{ right: "0px", top: "-200px", bottom: "200px" }}
       >
         <Image
           width={838}
           height={716}
-          src="/assets/img/testimonial/testi_thumb1_1.jpg"
+          src="/assets/img/testimonial/like-notification.png"
           alt="img"
         />
       </div>

@@ -26,16 +26,20 @@ export default function Footer3() {
         <div className="container">
           <div className="row gy-3 justify-content-between align-items-center">
             <div className="col-md-6">
-              <div className="social-btn style3">
-                <Socials />
-              </div>
+              {
+                <div className="style3" style={{ fontSize: "1.1rem" }}>
+                  {/* <Socials /> */}
+                  Banana Web Solutions
+                </div>
+              }
             </div>
             <div className="col-md-6 align-self-center text-md-end">
               <p className="copyright-text">
-                Copyright © {new Date().getFullYear()}{" "}
-                <a href="https://themeforest.net/user/ib-themes/portfolio">
-                  ib-themes
-                </a>
+                Copyright © {new Date().getFullYear()} {/* { */}
+                {/*   <a href="https://themeforest.net/user/ib-themes/portfolio"> */}
+                {/*     Banana Web Solutions */}
+                {/*   </a> */}
+                {/* } */}
               </p>
             </div>
           </div>

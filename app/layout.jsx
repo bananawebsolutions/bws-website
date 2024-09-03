@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
   //wow?.sync();
   //}, [path]);
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
         <ParallaxProvider>{children}</ParallaxProvider>
         <ScrollTop />

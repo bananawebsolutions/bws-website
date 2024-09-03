@@ -5,12 +5,12 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div className="project-area-4 space-bottom overflow-hidden">
+    <div className="project-area-4 space-bottom">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-8">
             <div className="title-area text-center">
-              <h2 className="sec-title">Discover Our Selected Projects</h2>
+              <h2 className="sec-title">Proyectos Seleccionados</h2>
             </div>
           </div>
         </div>
