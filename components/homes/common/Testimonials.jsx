@@ -32,8 +32,8 @@ export default function Testimonials() {
         // data-wow-delay="0.2s"
         style={{
           right: "0px",
-          top: "-200px",
-          bottom: "200px",
+          top: "-100px",
+          bottom: "100px",
         }}
       >
         <Image

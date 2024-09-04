@@ -4,7 +4,7 @@ export const faqs = [
     question: `Diseño y Desarrollo Web
 `,
     answer: `Creamos sitios web atractivos y funcionales, desde páginas 
-    personales hasta complejas tiendas en línea. 
+    sencillas o personales hasta sitios web complejos. 
     Cada proyecto se personaliza para reflejar la identidad única de tu marca.
 `,
   },
@@ -12,33 +12,33 @@ export const faqs = [
     id: 2,
     question: `Soluciones Web
 `,
-    answer: `Ya tienes un sitio web o e-commerce pero requieres alguna solución adicional para tus clientes o tu flujo de trabajo? Nosotros lo desarrollamos a la medida.
+    answer: `¿Ya tienes un sitio web o e-commerce pero requieres alguna solución adicional para tus clientes o tu flujo de trabajo? Nosotros lo desarrollamos a la medida.
 `,
   },
+  //   {
+  //     id: 3,
+  //     question: `E-commerce
+  // `,
+  //     answer: `Lleva tu tienda al siguiente nivel con
+  //     soluciones de comercio electrónico robustas y seguras.
+  //     Gestiona tus productos, pedidos y clientes de manera eficiente y segura.
+  //     `,
+  //   },
   {
     id: 3,
-    question: `E-commerce
-`,
-    answer: `Lleva tu tienda al siguiente nivel con 
-    soluciones de comercio electrónico robustas y seguras.
-    Gestiona tus productos, pedidos y clientes de manera eficiente y segura.
-    `,
-  },
-  {
-    id: 4,
     question: `Mantenimiento y Hosting`,
     answer: `Ofrecemos planes de suscripción para mantener tu sitio web actualizado y seguro. 
     Elige entre mantenimiento web básico o 
     una solución integral que incluye hosting y soporte técnico.`,
   },
+  // {
+  //   id: 5,
+  //   question: `Integración de APIs`,
+  //   answer: `Integración de APIs para agregar funcionalidad de tu sitio web y mejorar la experiencia de usuario.
+  //   `,
+  // },
   {
-    id: 5,
-    question: `Integración de APIs`,
-    answer: `Integración de APIs para agregar funcionalidad de tu sitio web y mejorar la experiencia de usuario.
-    `,
-  },
-  {
-    id: 6,
+    id: 4,
     // question: `Copywriting y Diseño Responsivo`, Aqui poner que esta optimizado para campanas de marketing. Analiticas. y ya despues poner lo de analiticas. Principal campanas de marketing.
     question: `Copywriting`,
     answer: `Nos encargamos de que tu contenido sea persuasivo y de calidad.

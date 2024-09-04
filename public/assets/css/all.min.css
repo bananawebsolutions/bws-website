@@ -4702,3 +4702,9 @@ canvas {
     bottom: -20px;
   }
 }
+
+.doodle-process {
+  position: absolute;
+  bottom: -510px;
+  left: 660px;
+}

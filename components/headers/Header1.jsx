@@ -113,7 +113,19 @@ export default function Header1() {
             <div className="container-fluid">
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
-                  <div className="header-logo">
+                  <div
+                    className="header-logo"
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Image
+                      src="/assets/img/bws-banana-icon.png"
+                      width={30}
+                      height={30}
+                    />
                     <Link className="logo-style" scroll={false} href="/">
                       {/* <Image */}
                       {/*   width={86} */}

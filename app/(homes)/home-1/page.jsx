@@ -1,5 +1,4 @@
 import MarqueeComponent from "@/components/common/Marquee";
-// import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import SearchPopup from "@/components/headers/component/SearchPopup";
 import Contact from "@/components/homes/common/Contact";
@@ -28,7 +27,6 @@ export default function HomePage1() {
       <Faq />
       <Steps />
       <Features2 />
-      {/* <Portfolio /> */}
       <Projects />
       <Testimonials />
       <Contact />

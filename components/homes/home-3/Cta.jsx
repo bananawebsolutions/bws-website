@@ -14,12 +14,10 @@ export default function Cta() {
         <div className="row justify-content-xl-between justify-content-center align-items-center">
           <div className="col-xl-8 col-lg-10">
             <div className="title-area mb-xl-0 mb-60">
-              <h2 className="sec-title text-white">
-                Let's Create Something Great
-              </h2>
+              <h2 className="sec-title text-white">Trabajemos Juntos</h2>
               <p className="sec-text mt-30 mb-n2 text-white">
-                We shift you from today’s reality to tomorrow’s potential,
-                ensuring
+                Transformamos tu visión en una realidad digital. Tu proyecto
+                estará en buenas manos.
               </p>
             </div>
           </div>
@@ -30,8 +28,8 @@ export default function Cta() {
               href="/contact"
             >
               <span className="link-effect">
-                <span className="effect-1">LET'S TALK</span>
-                <span className="effect-1">LET'S TALK</span>
+                <span className="effect-1">HABLEMOS</span>
+                <span className="effect-1">HABLEMOS</span>
               </span>
             </Link>
           </div>

@@ -1,4 +1,5 @@
 import { faqs } from "@/data/faq";
+import Link from "next/link";
 import React from "react";
 
 export default function Faq() {
@@ -52,6 +53,19 @@ export default function Faq() {
               ))}
             </div>
           </div>
+        </div>
+        <div className="btn-group fade_right" style={{ marginTop: "4rem" }}>
+          <Link
+            scroll={false}
+            href="/#contacto"
+            className="btn wow animated"
+            style={{ margin: "0 auto" }}
+          >
+            <span className="link-effect">
+              <span className="effect-1">¿DUDAS? CONTÁCTANOS</span>
+              <span className="effect-1">¿DUDAS? CONTÁCTANOS</span>
+            </span>
+          </Link>
         </div>
       </div>
     </div>

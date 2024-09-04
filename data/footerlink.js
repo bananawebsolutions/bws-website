@@ -1,12 +1,11 @@
 export const links = [
-  { id: 1, href: "/about", text: "ABOUT COMPANY" },
-  { id: 2, href: "/project", text: "OUR CAREERS" },
-  { id: 3, href: "/service", text: "SERVICES" },
-  { id: 4, href: "/contact", text: "CONTACT" },
+  { id: 1, href: "/", text: "INICIO" },
+  { id: 2, href: "/", text: "NOSOTROS" },
+  { id: 3, href: "/", text: "SERVICIOS" },
+  { id: 4, href: "/", text: "CONTACTO" },
 ];
 export const links2 = [
-  { id: 5, href: "/privacy-policy", text: "PRIVACY POLICY" },
-  { id: 6, href: "/terms-conditions", text: "TERMS & CONDITIONS" },
+  { id: 5, href: "/terminos-y-condiciones", text: "TÉRMINOS Y CONDICIONES" },
 ];
 export const links3 = [
   { id: 7, href: "/about", text: "About" },

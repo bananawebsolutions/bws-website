@@ -60,8 +60,12 @@ export default function About() {
                   <div className="btn-wrap mt-50">
                     <Link scroll={false} href="/about" className="link-btn">
                       <span className="link-effect">
-                        <span className="effect-1">ABOUT US</span>
-                        <span className="effect-1">ABOUT US</span>
+                        <span className="effect-1">
+                          HABLEMOS DE TU PROYECTO
+                        </span>
+                        <span className="effect-1">
+                          HABLEMOS DE TU PROYECTO
+                        </span>
                       </span>
                       <Image
                         width={13}

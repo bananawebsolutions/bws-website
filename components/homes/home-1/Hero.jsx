@@ -70,7 +70,7 @@ export default function Hero() {
               src="/assets/img/icon/worldwide.svg"
               alt="img"
             />
-            <h6>Agency of this year worldwide</h6>
+            <h6>By Fernando Rojas, desde México</h6>
           </div>
         </div>
       </div>
