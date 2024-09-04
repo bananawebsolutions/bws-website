@@ -17,7 +17,7 @@ export default function Steps() {
               height="831.000000pt"
               viewBox="0 0 1089.000000 831.000000"
               preserveAspectRatio="xMidYMid meet"
-              style={{ width: "150px" }}
+              className="doodle-process-svg"
             >
               <g
                 transform="translate(0.000000,831.000000) scale(0.100000,-0.100000)"
