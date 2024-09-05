@@ -17,11 +17,7 @@ export default function Projects() {
         <div className="row gy-4 justify-content-center masonary-active">
           {portfolioData4.slice(0, 3).map((elm, i) => (
             <div key={i} className={elm.parentClass}>
-              <Link
-                scroll={false}
-                href={`/project-details/${elm.id}`}
-                className="portfolio-wrap style3"
-              >
+              <div scroll={false} className="portfolio-wrap style3">
                 <div className="portfolio-thumb">
                   <Image
                     width={746}
@@ -36,7 +32,7 @@ export default function Projects() {
                   </ul>
                   <h3 className="portfolio-title">{elm.title}</h3>
                 </div>
-              </Link>
+              </div>
             </div>
           ))}
         </div>

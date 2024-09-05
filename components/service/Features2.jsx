@@ -16,7 +16,7 @@ export default function Features2() {
             <div key={i} className="col-xxl-6 col-xl-6">
               <div className="feature-card style-grid">
                 <div className="feature-card-icon">
-                  <Image width={40} height={40} src={elm.iconSrc} alt="icon" />
+                  <Image width={55} height={55} src={elm.iconSrc} alt="icon" />
                 </div>
                 <div className="feature-card-details">
                   <h4 className="feature-card-title">{elm.title}</h4>
