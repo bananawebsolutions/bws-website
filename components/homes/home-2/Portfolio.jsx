@@ -70,13 +70,13 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0" style={{ maxWidth: "1900px" }}>
         <Slider
           className="row global-carousel gx-60 portfolio-slider"
           {...sliderSettings}
         >
           {portfolioData2.map((item) => (
-            <div key={item.id} className="col-lg-4 sliderItem">
+            <div key={item.id} className="sliderItem">
               <div className="portfolio-wrap style2">
                 <div className="portfolio-thumb">
                   <Image
