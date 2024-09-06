@@ -1,5 +1,5 @@
 import { featureData4 } from "@/data/features";
-import Image from "next/image";
+import { SearchIcon, SearchIconYellow } from "@/icons";
 import React from "react";
 
 export default function Features2() {
@@ -15,8 +15,22 @@ export default function Features2() {
           {featureData4.map((elm, i) => (
             <div key={i} className="col-xxl-6 col-xl-6">
               <div className="feature-card style-grid">
-                <div className="feature-card-icon">
-                  <Image width={55} height={55} src={elm.iconSrc} alt="icon" />
+                <div
+                  className="feature-card-icon"
+                  style={{ position: "relative" }}
+                >
+                  <div style={{ position: "relative", zIndex: 1 }}>
+                    {elm.iconComponent}
+                  </div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      right: "-6px",
+                    }}
+                  >
+                    {elm.iconComponentRepeated}
+                  </div>
                 </div>
                 <div className="feature-card-details">
                   <h4 className="feature-card-title">{elm.title}</h4>

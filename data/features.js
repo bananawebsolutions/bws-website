@@ -1,3 +1,18 @@
+import {
+  LikeIcon,
+  LikeIconYellow,
+  MobileIcon,
+  MobileIconYellow,
+  RocketIcon,
+  RocketIconYellow,
+  SearchIcon,
+  SearchIconYellow,
+  ServerIcon,
+  ServerIconYellow,
+  UserIcon,
+  UserIconYellow,
+} from "@/icons";
+
 export const featureData = [
   {
     id: 1,
@@ -84,38 +99,44 @@ export const featureData3 = [
 ];
 export const featureData4 = [
   {
-    iconSrc: "/assets/img/icon/seo.png",
+    iconComponent: <SearchIcon />,
+    iconComponentRepeated: <SearchIconYellow />,
     title: "Optimización SEO",
     id: 14,
     text: "Tus sitios estarán diseñados para destacar en los motores de búsqueda, atrayendo más tráfico orgánico y aumentando tu visibilidad online.",
   },
   // tal vez falta aqui lo de Marketing. Pagina con analiticas o algo asi.
   {
-    iconSrc: "/assets/img/icon/atencion-cliente.png",
+    iconComponent: <UserIcon />,
+    iconComponentRepeated: <UserIconYellow />,
     title: "Atención al Cliente",
     id: 15,
     text: "Nos enorgullecemos de ofrecer una atención al cliente excepcional, asegurándonos de que todas tus necesidades y preguntas sean atendidas rápidamente.",
   },
   {
-    iconSrc: "/assets/img/icon/experiencia-usuario.png",
+    iconComponent: <LikeIcon />,
+    iconComponentRepeated: <LikeIconYellow />,
     title: "Experiencia de Usuario",
     id: 16,
     text: "Nos enfocamos en crear una experiencia de usuario intuitiva y agradable que mantenga a tus visitantes comprometidos y satisfechos.",
   },
   {
-    iconSrc: "/assets/img/icon/rendimiento-conversion.png",
+    iconComponent: <RocketIcon />,
+    iconComponentRepeated: <RocketIconYellow />,
     title: "Rendimiento y Alta Conversión",
     id: 17,
     text: "Diseñamos páginas web que no solo se ven bien, sino que también están optimizadas para cargar rápido y convertir visitantes en clientes.",
   },
   {
-    iconSrc: "/assets/img/icon/responsivo.png",
+    iconComponent: <MobileIcon />,
+    iconComponentRepeated: <MobileIconYellow />,
     title: "Diseño Responsivo e Interfaces de Usuario",
     id: 18,
     text: "Creamos interfaces atractivas y responsivas que ofrecen una experiencia de navegación fluida en todos los dispositivos.",
   },
   {
-    iconSrc: "/assets/img/icon/hosting.png",
+    iconComponent: <ServerIcon />,
+    iconComponentRepeated: <ServerIconYellow />,
     title: "Planes Mantenimiento Web y Hosting",
     id: 19,
     text: "Ofrecemos planes flexibles para el mantenimiento y hosting de tu sitio web, garantizando que siempre esté seguro y en funcionamiento.",
