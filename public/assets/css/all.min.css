@@ -4756,27 +4756,14 @@ canvas {
   }
 }
 
-.fade-out-portfolio {
-  display: block;
+.back-icon {
   position: absolute;
-  width: 5%;
-  height: 600px;
-  right: -30px;
-  z-index: 20;
-  background: linear-gradient(to right, transparent, white);
+  top: 0;
+  right: -6px;
 }
 
-.fade-out-portfolio-left {
-  display: block;
-  position: absolute;
-  width: 5%;
-  height: 600px;
-  left: -30px;
-  z-index: 20;
-  background: linear-gradient(to right, white, transparent);
+@media (max-width: 575px) {
+  .back-icon {
+    left: 6px;
+  }
 }
-/* @media screen and (max-width: 1900px) { */
-/*   .fade-out-portfolio { */
-/*     display: none; */
-/*   } */
-/* } */

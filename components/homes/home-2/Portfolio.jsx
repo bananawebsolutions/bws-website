@@ -83,7 +83,7 @@ export default function Portfolio() {
                     width={746}
                     height={540}
                     src={item.imageSrc}
-                    alt="portfolio"
+                    alt="Proyecto de Portafolio"
                   />
                 </div>
                 <div className="portfolio-details">

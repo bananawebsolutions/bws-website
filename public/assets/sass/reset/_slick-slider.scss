@@ -15,7 +15,29 @@
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
+  height: 100%;
+  max-height: 600px;
 }
+
+@media (max-width: 1600px) {
+  .slick-list {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slick-list {
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-list {
+    max-height: 220px;
+  }
+}
+
+// NOTE: Why on scrolling some times the height become the one I want?
 
 .slick-slide img {
   display: inline-block;

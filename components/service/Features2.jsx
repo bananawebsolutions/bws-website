@@ -1,5 +1,4 @@
 import { featureData4 } from "@/data/features";
-import { SearchIcon, SearchIconYellow } from "@/icons";
 import React from "react";
 
 export default function Features2() {
@@ -22,15 +21,7 @@ export default function Features2() {
                   <div style={{ position: "relative", zIndex: 1 }}>
                     {elm.iconComponent}
                   </div>
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      right: "-6px",
-                    }}
-                  >
-                    {elm.iconComponentRepeated}
-                  </div>
+                  <div className="back-icon">{elm.iconComponentRepeated}</div>
                 </div>
                 <div className="feature-card-details">
                   <h4 className="feature-card-title">{elm.title}</h4>
