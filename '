@@ -4757,26 +4757,11 @@ canvas {
 }
 
 .fade-out-portfolio {
-  display: block;
   position: absolute;
-  width: 5%;
-  height: 600px;
-  right: -30px;
-  z-index: 20;
-  background: linear-gradient(to right, transparent, white);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  background: linear-gradient(to right, transparent, yellow);
 }
-
-.fade-out-portfolio-left {
-  display: block;
-  position: absolute;
-  width: 5%;
-  height: 600px;
-  left: -30px;
-  z-index: 20;
-  background: linear-gradient(to right, white, transparent);
-}
-/* @media screen and (max-width: 1900px) { */
-/*   .fade-out-portfolio { */
-/*     display: none; */
-/*   } */
-/* } */
