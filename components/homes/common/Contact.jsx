@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -8,7 +9,18 @@ export default function Contact() {
           <div className="col-lg-6">
             <div className="contact-form-wrap">
               <div className="title-area mb-30">
-                <h2 className="sec-title">¿Qué Proyecto Tienes en Mente?</h2>
+                <div className="doodle-title-container">
+                  <div>
+                    <Image
+                      src="/assets/img/contact/doodle-arrow-2.png"
+                      width={180}
+                      height={180}
+                      alt="Contact Doodle"
+                      className="doodle-contact"
+                    />
+                  </div>
+                  <h2 className="sec-title">¿Qué Proyecto Tienes en Mente?</h2>
+                </div>
                 <p>
                   Estamos emocionados de conocer la visión de tu proyecto,
                   tenemos muchas ganas de comenzar a trabajar contigo.

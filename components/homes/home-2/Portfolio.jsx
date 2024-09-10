@@ -62,22 +62,27 @@ export default function Portfolio() {
   return (
     <div className="portfolio-area-1 space overflow-hidden">
       <div className="container">
-        <div
-          className="row justify-content-center"
-          style={{ position: "relative" }}
-        >
-          {/* <div> */}
-          {/*   <Image */}
-          {/*     src="/assets/img/portfolio/curve-line-doodle.png" */}
-          {/*     width={550} */}
-          {/*     height={100} */}
-          {/*     alt="Doodle" */}
-          {/*     className="doodle-portfolio" */}
-          {/*   /> */}
-          {/* </div> */}
+        <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-9">
             <div className="title-area text-center">
-              <h2 className="sec-title">Proyectos Seleccionados</h2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "1rem",
+                }}
+              >
+                <div>
+                  <Image
+                    src="/assets/img/portfolio/diamond-doodle.png"
+                    height={160}
+                    width={160}
+                    alt="Doodle Portfolio"
+                    className="doodle-portfolio"
+                  />
+                </div>
+                <h2 className="sec-title">Proyectos Seleccionados</h2>
+              </div>
             </div>
           </div>
         </div>
