@@ -3,18 +3,6 @@
 export default function Contact() {
   return (
     <div className="contact-area-1 space shape-mockup-wrap">
-      <div
-        className="contact-map shape-mockup wow img-custom-anim-left animated"
-        data-wow-duration="1.5s"
-        data-wow-delay="0.2s"
-        style={{ top: "-100px", left: 0, bottom: "140px" }}
-      >
-        <iframe
-          src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&t=m&z=10&output=embed&iwloc=near"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6">

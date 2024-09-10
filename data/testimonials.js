@@ -1,21 +1,21 @@
 export const testimonialData = [
   {
     id: 1,
-    text: "Desde que contraté a BananaWeb Solutions, mi sitio web ha mejorado su rendimiento y mis ventas han aumentado. Excelente servicio y atención al cliente.",
-    name: "Ana Martínez",
-    designation: "Gerente General",
+    text: "Ofrecen servicios excepcionales de desarrollo web, destacándose por su atención al cliente, habilidad técnica, y flexibilidad. Su compromiso con la seguridad y la integridad de la información es notable. Recomiendo encarecidamente sus servicios para futuros proyectos.",
+    name: "Héctor M. Villaseñor",
+    designation: "Director General",
   },
   {
     id: 2,
-    text: "Gracias a su enfoque en la experiencia de usuario, mis clientes tienen una navegación fluida y mis conversiones han aumentado considerablemente.",
-    name: "Pedro Noboa",
-    designation: "Director de Marketing",
+    text: "Trabajar en la página web de nuestra empresa fue una experiencia excelente. Demostraron gran atención, profesionalismo y cumplimiento de plazos. La calidad del diseño y funcionalidad es sobresaliente. Los recomiendo sin reservas por su dedicación y enfoque en la satisfacción del cliente.",
+    name: "Victoria Elizalde",
+    designation: "Gerente Comercial",
   },
   {
     id: 3,
-    text: "It’s a pleasure working with Bunker. They understood our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms. The team is responsive, quick and always willing help winning partnership",
-    name: "Daniyel Karlos",
-    designation: "Senior Director of Marketing",
+    text: "Trabajar con BWS fue muy orgánico, desde el principio me explicaron el método, la verdad es que todo fue muy claro. Reconozco su paciencia y disposición para resolver las dudas que tuve durante el proceso en la construcción del sitio web. Muy recomendable.",
+    name: "Alfredo Pérez",
+    designation: "Departamento de Difusión",
   },
 ];
 export const testimonialData2 = [

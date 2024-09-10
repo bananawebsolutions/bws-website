@@ -57,10 +57,7 @@ export default function Testimonials() {
                 alt="icon"
               />
             </div>
-            <Slider
-              className="row global-carousel testi-slider1 "
-              {...settings}
-            >
+            <Slider className="row global-carousel testi-slider1" {...settings}>
               {testimonialData.map((testimonial) => (
                 <div key={testimonial.id} className="col-lg-4 sliderItem">
                   <div className="testi-box">
