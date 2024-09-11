@@ -40,7 +40,7 @@ export default function Testimonials() {
           width={838}
           height={716}
           src="/assets/img/testimonial/testimonial3-nologo.jpeg"
-          alt="img"
+          alt="Mujer trabajando comiendo un Plátano"
         />
       </div>
       <div className="container">
@@ -49,7 +49,7 @@ export default function Testimonials() {
             <div className="title-area ">
               <h2 className="sec-title">Testimoniales</h2>
             </div>
-            <div className="quote-icon ">
+            <div className="quote-icon">
               <Image
                 width={52}
                 height={32}

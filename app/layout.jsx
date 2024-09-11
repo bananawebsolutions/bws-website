@@ -40,10 +40,9 @@ export default function RootLayout({ children }) {
     });
     wow.init();
   }, [path]);
-  //useEffect(() => {
-
-  //wow?.sync();
-  //}, [path]);
+  // useEffect(() => {
+  //   wow?.sync();
+  // }, [path]);
   return (
     <html lang="es">
       <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
