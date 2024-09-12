@@ -46,7 +46,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="title-area ">
+            <div className="title-area">
               <h2 className="sec-title">Testimoniales</h2>
             </div>
             <div className="quote-icon">

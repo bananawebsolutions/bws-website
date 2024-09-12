@@ -1,5 +1,6 @@
 "use client";
 import addGsap from "@/utils/addGsap";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
@@ -24,9 +25,10 @@ export default function Cta() {
           <div className="col-xl-auto">
             <Link
               scroll={false}
-              className="circle-btn btn bg-theme text-title gsap-magnetic"
+              className="circle-btn btn bg-theme text-title gsap-magnetic flex-cta"
               href="/contact"
             >
+              <Image width={60} height={60} src="/assets/img/contact/doodle-face.png" alt="Cara Sonriendo" className="face-doodle"  /> 
               <span className="link-effect">
                 <span className="effect-1">HABLEMOS</span>
                 <span className="effect-1">HABLEMOS</span>
