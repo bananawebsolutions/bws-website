@@ -1,4 +1,5 @@
 "use client";
+
 import addGsap from "@/utils/addGsap";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,8 +18,8 @@ export default function Cta() {
             <div className="title-area mb-xl-0 mb-60">
               <h2 className="sec-title text-white">Trabajemos Juntos</h2>
               <p className="sec-text mt-30 mb-n2 text-white">
-                Transformamos tu visión en una realidad digital. Tu proyecto
-                estará en buenas manos.
+                Transformamos tu visión en una realidad digital.<br /> Tu proyecto
+                estará en las mejores manos.
               </p>
             </div>
           </div>

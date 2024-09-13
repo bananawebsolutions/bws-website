@@ -1,5 +1,5 @@
 import React from "react";
-import Socials from "./component/Socials";
+// import Socials from "./component/Socials";
 import FooterLinks1 from "./component/FooterLinks1";
 import FooterLinks2 from "./component/FooterLinks2";
 

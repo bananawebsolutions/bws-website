@@ -73,12 +73,29 @@ export default function Header1() {
           </button>
           <div className="mobile-logo">
             <Link scroll={false} href="/">
-              <Image
+              {/* <Image
                 width={86}
                 height={24}
                 src="/assets/img/logo.svg"
                 alt="Ovation"
-              />
+              /> */}
+              <div
+                className="header-logo"
+                style={{
+                  display: "flex",
+                  gap: "5px",
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  src="/assets/img/bws-banana-icon.png"
+                  width={30}
+                  height={30}
+                />
+                <Link className="logo-style" scroll={false} href="/">
+                  BWS
+                </Link>
+              </div>
             </Link>
           </div>
           <div className="mobile-menu">
@@ -87,20 +104,20 @@ export default function Header1() {
             </ul>
           </div>
           <div className="sidebar-wrap">
-            <h6>27 Division St, New York,</h6>
-            <h6>NY 10002, USA</h6>
+            <h6>Ciudad de México, MX</h6>
+            <h6>By Fernando Rojas</h6>
           </div>
           <div className="sidebar-wrap">
             <h6>
-              <a href="tel:1800123654987">+1 800 123 654 987 </a>
+              <a href="tel:+52798880123">+52 798 880 1234</a>
             </h6>
             <h6>
-              <a href="mailto:frisk.agency@mail.com">frisk.agency@mail.com</a>
+              <a href="mailto:frisk.agency@mail.com">contacto<br />@bananawebsolutions.com</a>
             </h6>
           </div>
-          <div className="social-btn style3">
+          {/* <div className="social-btn style3">
             <MobileMenuSocials />
-          </div>
+          </div> */}
         </div>
       </div>
       {/*--==============================
