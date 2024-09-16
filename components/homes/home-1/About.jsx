@@ -4,7 +4,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about-area-1 space bg-theme shape-mockup-wrap">
+    <div className="about-area-1 space bg-theme shape-mockup-wrap" id="nosotros">
       <div
         className="about-img-1-1 shape-mockup wow animated"
         style={{

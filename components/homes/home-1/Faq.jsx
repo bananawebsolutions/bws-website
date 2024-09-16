@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="faq-area-1 space overflow-hidden">
+    <div className="faq-area-1 space overflow-hidden" id="servicios">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-8">

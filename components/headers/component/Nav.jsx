@@ -1,7 +1,9 @@
 "use client";
+
 import { menuItems } from "@/data/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useCallback } from "react";
 
 export default function Nav() {
   const pathname = usePathname();
@@ -9,17 +11,11 @@ export default function Nav() {
   const isChildActive = (links) => {
     let isActive = false;
     links.forEach((element) => {
-      if (
-        element.link &&
-        element.link?.split("/")[1] == pathname?.split("/")[1]
-      ) {
+      if (element.link && element.link?.split("/")[1] == pathname?.split("/")[1]) {
         isActive = true;
       } else if (element.subMenuItems) {
         element.subMenuItems.forEach((element2) => {
-          if (
-            element2.link &&
-            element2.link?.split("/")[1] == pathname?.split("/")[1]
-          ) {
+          if (element2.link && element2.link?.split("/")[1] == pathname?.split("/")[1]) {
             isActive = true;
           }
         });
@@ -32,14 +28,11 @@ export default function Nav() {
   return (
     <>
       {menuItems.map((elm, i) => (
-        <li
-          key={i}
-          className={elm.subMenuItems ? " menu-item-has-children" : ""}
-        >
+        <li key={i} className={elm.subMenuItems ? "menu-item-has-children" : ""}>
           {elm.subMenuItems ? (
             <>
               <a
-                href="#"
+                href={elm.link}
                 className={isChildActive(elm.subMenuItems) ? "activeMenu" : ""}
               >
                 <span className="link-effect">
@@ -50,19 +43,12 @@ export default function Nav() {
 
               <ul className="sub-menu">
                 {elm.subMenuItems.map((elm2, i2) => (
-                  <li
-                    key={i2}
-                    className={
-                      elm2.subMenuItems ? " menu-item-has-children" : ""
-                    }
-                  >
+                  <li key={i2} className={elm2.subMenuItems ? "menu-item-has-children" : ""}>
                     {elm2.subMenuItems ? (
                       <>
                         <a
-                          href="#"
-                          className={
-                            isChildActive(elm2.subMenuItems) ? "activeMenu" : ""
-                          }
+                          href={elm2.link}
+                          className={isChildActive(elm2.subMenuItems) ? "activeMenu" : ""}
                         >
                           {elm2.title}
                         </a>
@@ -70,10 +56,9 @@ export default function Nav() {
                           {elm2.subMenuItems.map((elm3, i3) => (
                             <li key={i3}>
                               <Link
-                                scroll={false}
+                                scroll={true}
                                 className={
-                                  elm3.link?.split("/")[1] ==
-                                  pathname?.split("/")[1]
+                                  elm3.link?.split("/")[1] == pathname?.split("/")[1]
                                     ? "activeMenu"
                                     : ""
                                 }
@@ -87,7 +72,7 @@ export default function Nav() {
                       </>
                     ) : (
                       <Link
-                        scroll={false}
+                        scroll={true}
                         className={
                           elm2.link?.split("/")[1] == pathname?.split("/")[1]
                             ? "activeMenu"
@@ -104,12 +89,8 @@ export default function Nav() {
             </>
           ) : (
             <Link
-              scroll={false}
-              className={
-                elm.link?.split("/")[1] == pathname?.split("/")[1]
-                  ? "activeMenu"
-                  : ""
-              }
+              scroll={true}
+              className={elm.link?.split("/")[1] == pathname?.split("/")[1] ? "activeMenu" : ""}
               href={elm.link}
             >
               <span className="link-effect">

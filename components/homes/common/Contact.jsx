@@ -2,8 +2,7 @@
 import Image from "next/image";
 
 export default function Contact() {
-  return (
-    <div className="contact-area-1 space shape-mockup-wrap">
+  return ( <div className="contact-area-1 space shape-mockup-wrap" id="contacto">
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6">

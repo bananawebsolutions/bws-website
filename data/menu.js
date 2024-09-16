@@ -3,7 +3,7 @@ export const menuItems = [
     id: 1,
     title: "INICIO",
     isActive: true,
-    subMenuItems: [],
+    link: "/"
     // subMenuItems: [
     //   { id: 11, label: "Digital Agency", link: "/" },
     //   { id: 12, label: "Creative Agency", link: "/home-2" },
@@ -18,7 +18,7 @@ export const menuItems = [
   {
     id: 2,
     title: "NOSOTROS",
-    subMenuItems: [],
+    link: "/#nosotros",
     // subMenuItems: [
     //   { id: 21, label: "About Page", link: "/about" },
     //   {
@@ -46,9 +46,10 @@ export const menuItems = [
   {
     id: 3,
     title: "SERVICIOS",
+    // link: "/#servicios",
     subMenuItems: [
-      { id: 31, label: "Desarrollo Web", link: "/project" },
-      { id: 32, label: "Mantenimiento Web", link: "/project-2" },
+      { id: 1, label: "Desarrollo Web", link: "/#servicios" },
+      { id: 2, label: "Mantenimiento Web", link: "/mantenimiento-web" },
     ],
   },
   // {
@@ -61,8 +62,8 @@ export const menuItems = [
   //   ],
   // },
   {
-    id: 5,
+    id: 4,
     title: "CONTACTO",
-    link: "#contacto",
+    link: "/#contacto",
   },
 ];
