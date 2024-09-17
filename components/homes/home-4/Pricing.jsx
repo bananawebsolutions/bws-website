@@ -1,15 +1,16 @@
 import { plans } from "@/data/pricing";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 export default function Pricing() {
   return (
-    <div className="space">
+    <div className="space-bottom" id="mantenimiento-web">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xxl-7 col-xl-6 col-lg-8">
             <div className="title-area text-center">
-              <h2 className="sec-title">Best Pricing Plan</h2>
+              <h2 className="sec-title">Planes de Mantenimiento Web</h2>
             </div>
           </div>
         </div>
@@ -17,12 +18,25 @@ export default function Pricing() {
           {plans.map((elm, i) => (
             <div key={i} className="col-lg-4 col-md-6">
               <div className="pricing-card bg-smoke">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <Image
+                    src="/assets/img/team/team-1-1.png"
+                    width={300}
+                    height={300}
+                  />
+                </div>
                 <h4 className="pricing-card_title">{elm.title}</h4>
                 <div className="price-card-wrap">
                   <h4 className="pricing-card_price">
                     <span className="currency">$</span>
                     {elm.price}
-                    <span className="duration">/mo</span>
+                    <span className="duration">/mes</span>
                   </h4>
                 </div>
                 <p>{elm.title}</p>
@@ -35,10 +49,10 @@ export default function Pricing() {
                     ))}
                   </ul>
                 </div>
-                <Link scroll={false} href="/project" className="btn">
+                <Link scroll={false} href="#" className="btn">
                   <span className="link-effect">
-                    <span className="effect-1">CHOOSE THIS PLAN</span>
-                    <span className="effect-1">CHOOSE THIS PLAN</span>
+                    <span className="effect-1">ESCOGER ESTE PLAN</span>
+                    <span className="effect-1">ESCOGER ESTE PLAN</span>
                   </span>
                 </Link>
               </div>

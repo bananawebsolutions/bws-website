@@ -3,7 +3,7 @@ export const menuItems = [
     id: 1,
     title: "INICIO",
     isActive: true,
-    link: "/"
+    link: "/",
     // subMenuItems: [
     //   { id: 11, label: "Digital Agency", link: "/" },
     //   { id: 12, label: "Creative Agency", link: "/home-2" },
@@ -49,7 +49,7 @@ export const menuItems = [
     // link: "/#servicios",
     subMenuItems: [
       { id: 1, label: "Desarrollo Web", link: "/#servicios" },
-      { id: 2, label: "Mantenimiento Web", link: "/mantenimiento-web" },
+      { id: 2, label: "Mantenimiento Web", link: "/#mantenimiento-web" },
     ],
   },
   // {

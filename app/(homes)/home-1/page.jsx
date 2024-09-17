@@ -11,6 +11,7 @@ import Steps from "@/components/homes/home-5/Steps";
 import Footer3 from "@/components/footers/Footer3";
 import Cta from "@/components/homes/home-3/Cta";
 import Portfolio from "@/components/homes/home-2/Portfolio";
+import Pricing from "@/components/homes/home-4/Pricing";
 
 export default function HomePage1() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage1() {
       <About />
       <MarqueeComponent />
       <Faq />
+      <Pricing />
       <Steps />
       <Features2 />
       <Portfolio />
@@ -31,3 +33,4 @@ export default function HomePage1() {
     </>
   );
 }
+

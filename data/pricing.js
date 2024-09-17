@@ -1,8 +1,8 @@
 export const plans = [
   {
     id: 1,
-    title: "Startup",
-    price: 180,
+    title: "Básico",
+    price: 300,
 
     features: [
       "Web & Mobile",
@@ -14,8 +14,8 @@ export const plans = [
   },
   {
     id: 2,
-    title: "Startup",
-    price: 180,
+    title: "Total",
+    price: 650,
 
     features: [
       "Web & Mobile",
@@ -25,18 +25,5 @@ export const plans = [
       "Web Design",
     ],
   },
-  {
-    id: 3,
-    title: "Startup",
-    price: 180,
-
-    features: [
-      "Web & Mobile",
-      "Free Custom Domain",
-      "Best Hosting Ever",
-      "Outstanding Support",
-      "Web Design",
-    ],
-  },
-  // Add more plans as needed
+  // Add or delete plans as needed
 ];

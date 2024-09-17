@@ -28,7 +28,6 @@
   padding-bottom: $space-extra2;
 }
 
-
 @include md {
   .space,
   .space-top {
@@ -68,5 +67,6 @@
   }
   .pt-105 {
     padding-top: 65px;
+  }
 }
-}
+
