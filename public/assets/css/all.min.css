@@ -4811,10 +4811,10 @@ canvas {
 }
 
 .flex-cta {
- display: flex; 
- flex-direction: column;
- align-items: center;
- gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .face-doodle {
@@ -4830,5 +4830,18 @@ canvas {
   .face-doodle {
     width: 40px;
     height: 40px;
+  }
+}
+
+.img-maintenance-box {
+  width: 350px;
+  height: 350px;
+  filter: drop-shadow(0 12px 12px #707070);
+}
+
+@media screen and (max-width: 600px) {
+  .img-maintenance-box {
+    width: 300px;
+    height: 300px;
   }
 }

@@ -16,7 +16,7 @@ export default function Pricing() {
         </div>
         <div className="row gy-4 justify-content-center">
           {plans.map((elm, i) => (
-            <div key={i} className="col-lg-4 col-md-6">
+            <div key={i} className="col-lg-6 col-md-6">
               <div className="pricing-card bg-smoke">
                 <div
                   style={{
@@ -26,9 +26,11 @@ export default function Pricing() {
                   }}
                 >
                   <Image
-                    src="/assets/img/team/team-1-1.png"
-                    width={300}
-                    height={300}
+                    src="/assets/img/pricing/plan-basico-mantenimiento-web.png"
+                    width={350}
+                    height={350}
+                    alt="Caja de Presentación Mantenimiento Web"
+                    className="img-maintenance-box"
                   />
                 </div>
                 <h4 className="pricing-card_title">{elm.title}</h4>
