@@ -18,18 +18,24 @@ export default function Cta() {
             <div className="title-area mb-xl-0 mb-60">
               <h2 className="sec-title text-white">Trabajemos Juntos</h2>
               <p className="sec-text mt-30 mb-n2 text-white">
-                Transformamos tu visión en una realidad digital.<br /> Tu proyecto
-                estará en las mejores manos.
+                Transformamos tu visión en una realidad digital.
+                <br /> Tu proyecto estará en las mejores manos.
               </p>
             </div>
           </div>
           <div className="col-xl-auto">
             <Link
-              scroll={false}
+              scroll={true}
               className="circle-btn btn bg-theme text-title gsap-magnetic flex-cta"
-              href="/contact"
+              href="/#contacto"
             >
-              <Image width={60} height={60} src="/assets/img/contact/doodle-face.png" alt="Cara Sonriendo" className="face-doodle"  /> 
+              <Image
+                width={60}
+                height={60}
+                src="/assets/img/contact/doodle-face.png"
+                alt="Cara Sonriendo"
+                className="face-doodle"
+              />
               <span className="link-effect">
                 <span className="effect-1">HABLEMOS</span>
                 <span className="effect-1">HABLEMOS</span>

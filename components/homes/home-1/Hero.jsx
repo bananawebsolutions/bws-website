@@ -51,8 +51,8 @@ export default function Hero() {
               </p>
               <div className="btn-group fade_right">
                 <Link
-                  scroll={false}
-                  href="/project"
+                  scroll={true}
+                  href="/#servicios"
                   className="btn wow animated"
                 >
                   <span className="link-effect">

@@ -34,30 +34,35 @@ export default function SideMenu({ isOpen, setIsOpen }) {
                   src="/assets/img/logo-white.svg"
                   alt="Ovation"
                 /> */}
-                  <div
-                    className="header-logo"
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      alignItems: "center",
-                    }}
+                <div
+                  className="header-logo"
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    alignItems: "center",
+                  }}
+                >
+                  <Image
+                    src="/assets/img/bws-banana-icon.png"
+                    width={30}
+                    height={30}
+                    style={{ filter: "invert(1)" }}
+                  />
+                  <Link
+                    className="logo-style"
+                    scroll={false}
+                    href="/"
+                    style={{ color: "white" }}
                   >
-                    <Image
-                      src="/assets/img/bws-banana-icon.png"
-                      width={30}
-                      height={30}
-                      style={{ filter: "invert(1)" }}
-                    />
-                    <Link className="logo-style" scroll={false} href="/" style={{ color: "white" }}>
-                      {/* <Image */}
-                      {/*   width={86} */}
-                      {/*   height={24} */}
-                      {/*   src="/assets/img/logo.svg" */}
-                      {/*   alt="logo" */}
-                      {/* /> */}
-                      BWS
-                    </Link>
-                  </div>
+                    {/* <Image */}
+                    {/*   width={86} */}
+                    {/*   height={24} */}
+                    {/*   src="/assets/img/logo.svg" */}
+                    {/*   alt="logo" */}
+                    {/* /> */}
+                    BWS
+                  </Link>
+                </div>
               </Link>
             </div>
             <p className="about-text">
@@ -72,7 +77,9 @@ export default function SideMenu({ isOpen, setIsOpen }) {
                 <a href="tel:7298880123">+52 729 888 0123</a>
               </h6>
               <h6>
-                <a href="mailto:frisk.agency@mail.com">contacto@bananawebsolutions.com</a>
+                <a href="mailto:frisk.agency@mail.com">
+                  contacto@bananawebsolutions.com
+                </a>
               </h6>
             </div>
             {/* <div className="social-btn style2">
@@ -82,11 +89,17 @@ export default function SideMenu({ isOpen, setIsOpen }) {
         </div>
         <div className="d-flex justify-content-end">
           <Link
-            scroll={false}
-            href="/contact"
+            scroll={true}
+            href="/#contacto"
             className="chat-btn gsap-magnetic flex-cta"
           >
-          <Image width={60} height={60} src="/assets/img/contact/doodle-face.png" alt="Cara Sonriendo" className="face-doodle"  /> 
+            <Image
+              width={60}
+              height={60}
+              src="/assets/img/contact/doodle-face.png"
+              alt="Cara Sonriendo"
+              className="face-doodle"
+            />
             Hablemos
           </Link>
         </div>

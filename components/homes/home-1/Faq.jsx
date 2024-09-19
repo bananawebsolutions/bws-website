@@ -56,7 +56,7 @@ export default function Faq() {
         </div>
         <div className="btn-group fade_right" style={{ marginTop: "4rem" }}>
           <Link
-            scroll={false}
+            scroll={true}
             href="/#contacto"
             className="btn wow animated"
             style={{ margin: "0 auto" }}
