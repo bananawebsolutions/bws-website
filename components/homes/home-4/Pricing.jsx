@@ -26,7 +26,7 @@ export default function Pricing() {
                   }}
                 >
                   <Image
-                    src="/assets/img/pricing/plan-basico-mantenimiento.webp"
+                    src={elm.img}
                     width={350}
                     height={350}
                     alt="Caja de Presentación Mantenimiento Web"
