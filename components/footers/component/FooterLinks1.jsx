@@ -7,7 +7,7 @@ export default function FooterLinks1() {
     <>
       {links.map((link, index) => (
         <li key={index}>
-          <Link scroll={false} href={link.href}>
+          <Link scroll={true} href={link.href}>
             <span className="link-effect">
               <span className="effect-1">{link.text}</span>
               <span className="effect-1">{link.text}</span>
