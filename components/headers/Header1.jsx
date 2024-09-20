@@ -113,7 +113,11 @@ export default function Header1() {
               <a href="tel:+52798880123">+52 798 880 1234</a>
             </h6>
             <h6>
-              <a href="mailto:frisk.agency@mail.com">contacto<br />@bananawebsolutions.com</a>
+              <a href="mailto:frisk.agency@mail.com">
+                contacto
+                <br />
+                @bananawebsolutions.com
+              </a>
             </h6>
           </div>
           {/* <div className="social-btn style3">

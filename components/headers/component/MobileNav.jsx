@@ -2,34 +2,35 @@
 import { menuItems } from "@/data/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function MobileNav() {
   const [activeMenu, setActiveMenu] = useState([-1, false]);
   const pathname = usePathname();
 
-  const isChildActive = (links) => {
-    let isActive = false;
-    links.forEach((element) => {
-      if (
-        element.link &&
-        element.link?.split("/")[1] == pathname?.split("/")[1]
-      ) {
-        isActive = true;
-      } else if (element.subMenuItems) {
-        element.subMenuItems.forEach((element2) => {
-          if (
-            element2.link &&
-            element2.link?.split("/")[1] == pathname?.split("/")[1]
-          ) {
-            isActive = true;
-          }
-        });
-      }
-    });
+  // const isChildActive = (links) => {
+  //   let isActive = false;
+  //   links.forEach((element) => {
+  //     if (
+  //       element.link &&
+  //       element.link?.split("/")[1] == pathname?.split("/")[1]
+  //     ) {
+  //       isActive = true;
+  //     } else if (element.subMenuItems) {
+  //       element.subMenuItems.forEach((element2) => {
+  //         if (
+  //           element2.link &&
+  //           element2.link?.split("/")[1] == pathname?.split("/")[1]
+  //         ) {
+  //           isActive = true;
+  //         }
+  //       });
+  //     }
+  //   });
+  //
+  //   return isActive;
+  // };
 
-    return isActive;
-  };
   return (
     <>
       {menuItems.map((elm, i) => (
@@ -47,13 +48,13 @@ export default function MobileNav() {
           {elm.subMenuItems ? (
             <>
               <a
-                href="#"
+                href={elm.link}
                 onClick={() =>
                   setActiveMenu((pre) => {
                     return pre[0] == i ? [-1, false] : [i, false];
                   })
                 }
-                className={isChildActive(elm.subMenuItems) ? "activeMenu" : ""}
+                // className={isChildActive(elm.subMenuItems) ? "activeMenu" : ""}
               >
                 {elm.title}
                 <span className="mean-expand-class"></span>
@@ -81,7 +82,7 @@ export default function MobileNav() {
                     {elm2.subMenuItems ? (
                       <>
                         <a
-                          href="#"
+                          href={elm2.link}
                           onClick={() => {
                             setActiveMenu((pre) => {
                               return pre[1] ? [pre[0], false] : [pre[0], true];
@@ -108,7 +109,7 @@ export default function MobileNav() {
                           {elm2.subMenuItems.map((elm3, i3) => (
                             <li key={i3}>
                               <Link
-                                scroll={false}
+                                scroll={true}
                                 className={
                                   elm3.link?.split("/")[1] ==
                                   pathname?.split("/")[1]
@@ -125,7 +126,7 @@ export default function MobileNav() {
                       </>
                     ) : (
                       <Link
-                        scroll={false}
+                        scroll={true}
                         className={
                           elm2.link?.split("/")[1] == pathname?.split("/")[1]
                             ? "activeMenu2"
@@ -142,7 +143,7 @@ export default function MobileNav() {
             </>
           ) : (
             <Link
-              scroll={false}
+              scroll={true}
               className={
                 elm.link?.split("/")[1] == pathname?.split("/")[1]
                   ? "activeMenu"

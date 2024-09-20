@@ -53,7 +53,7 @@ export default function DarkNav() {
                     return pre[0] == i ? [-1, false] : [i, false];
                   })
                 }
-                className={isChildActive(elm.subMenuItems) ? "activeMenu" : ""}
+                // className={isChildActive(elm.subMenuItems) ? "activeMenu" : ""}
               >
                 {elm.title}
                 <span className="mean-expand-class2"></span>
@@ -87,9 +87,9 @@ export default function DarkNav() {
                               return pre[1] ? [pre[0], false] : [pre[0], true];
                             });
                           }}
-                          className={
-                            isChildActive(elm2.subMenuItems) ? "activeMenu" : ""
-                          }
+                          // className={
+                          //   isChildActive(elm2.subMenuItems) ? "activeMenu" : ""
+                          // }
                         >
                           {elm2.title}
                           <span className="mean-expand-class2"></span>
@@ -107,12 +107,12 @@ export default function DarkNav() {
                             <li key={i3}>
                               <Link
                                 scroll={false}
-                                className={
-                                  elm3.link?.split("/")[1] ==
-                                  pathname?.split("/")[1]
-                                    ? "activeMenu"
-                                    : ""
-                                }
+                                // className={
+                                //   elm3.link?.split("/")[1] ==
+                                //   pathname?.split("/")[1]
+                                //     ? "activeMenu"
+                                //     : ""
+                                // }
                                 href={elm3.link}
                               >
                                 {elm3.label}
@@ -124,11 +124,11 @@ export default function DarkNav() {
                     ) : (
                       <Link
                         scroll={false}
-                        className={
-                          elm2.link?.split("/")[1] == pathname?.split("/")[1]
-                            ? "activeMenu"
-                            : ""
-                        }
+                        // className={
+                        //   elm2.link?.split("/")[1] == pathname?.split("/")[1]
+                        //     ? "activeMenu"
+                        //     : ""
+                        // }
                         href={elm2.link}
                       >
                         {elm2.label}
@@ -141,11 +141,11 @@ export default function DarkNav() {
           ) : (
             <Link
               scroll={false}
-              className={
-                elm.link?.split("/")[1] == pathname?.split("/")[1]
-                  ? "activeMenu"
-                  : ""
-              }
+              // className={
+              //   elm.link?.split("/")[1] == pathname?.split("/")[1]
+              //     ? "activeMenu"
+              //     : ""
+              // }
               href={elm.link}
             >
               {elm.title}
