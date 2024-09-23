@@ -27,6 +27,7 @@ export default function Features2() {
                       top: 0,
                       right: "-6px",
                     }}
+                    className="repeated-icon"
                   >
                     {elm.iconComponentRepeated}
                   </div>
