@@ -4845,3 +4845,39 @@ canvas {
     height: 300px;
   }
 }
+
+button.slick-arrow.slick-next {
+  background-image: url("/assets/img/portfolio/right-arrow.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: black 2px solid;
+  content: "";
+  color: transparent;
+  right: -30px;
+  display: block;
+}
+
+@media (max-width: 2000px) {
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
+}
+
+button.slick-arrow.slick-prev {
+  background-image: url("/assets/img/portfolio/left-arrow.png");
+  background-size: 60%;
+  border: black 2px solid;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  color: transparent;
+  left: -30px;
+  display: block;
+}
+
+@media (max-width: 2000px) {
+  button.slick-arrow.slick-prev {
+    display: none !important;
+  }
+}
