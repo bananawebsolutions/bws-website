@@ -21,7 +21,15 @@ export default function Features2() {
                   <div style={{ position: "relative", zIndex: 1 }}>
                     {elm.iconComponent}
                   </div>
-                  <div className="back-icon">{elm.iconComponentRepeated}</div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      right: "-6px",
+                    }}
+                  >
+                    {elm.iconComponentRepeated}
+                  </div>
                 </div>
                 <div className="feature-card-details">
                   <h4 className="feature-card-title">{elm.title}</h4>
