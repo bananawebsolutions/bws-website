@@ -2,34 +2,8 @@
 
 import { menuItems } from "@/data/menu";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-// import { useEffect, useCallback } from "react";
 
 export default function Nav() {
-  const pathname = usePathname();
-
-  // const isChildActive = (links) => {
-  //   let isActive = false;
-  //   links.forEach((element) => {
-  //     if (
-  //       element.link &&
-  //       element.link?.split("/")[1] == pathname?.split("/")[1]
-  //     ) {
-  //       isActive = true;
-  //     } else if (element.subMenuItems) {
-  //       element.subMenuItems.forEach((element2) => {
-  //         if (
-  //           element2.link &&
-  //           element2.link?.split("/")[1] == pathname?.split("/")[1]
-  //         ) {
-  //           isActive = true;
-  //         }
-  //       });
-  //     }
-  //   });
-  //
-  //   return isActive;
-  // };
 
   return (
     <>
@@ -42,7 +16,6 @@ export default function Nav() {
             <>
               <a
                 href={elm.link}
-                // className={isChildActive(elm.subMenuItems) ? "activeMenu" : ""}
               >
                 <span className="link-effect">
                   <span className="effect-1">{elm.title}</span>
@@ -62,9 +35,6 @@ export default function Nav() {
                       <>
                         <a
                           href={elm2.link}
-                          // className={
-                          //   isChildActive(elm2.subMenuItems) ? "activeMenu" : ""
-                          // }
                         >
                           {elm2.title}
                         </a>
@@ -73,12 +43,6 @@ export default function Nav() {
                             <li key={i3}>
                               <Link
                                 scroll={true}
-                                className={
-                                  elm3.link?.split("/")[1] ==
-                                  pathname?.split("/")[1]
-                                    ? "activeMenu"
-                                    : ""
-                                }
                                 href={elm3.link}
                               >
                                 {elm3.label}
@@ -90,11 +54,6 @@ export default function Nav() {
                     ) : (
                       <Link
                         scroll={true}
-                        className={
-                          elm2.link?.split("/")[1] == pathname?.split("/")[1]
-                            ? "activeMenu"
-                            : ""
-                        }
                         href={elm2.link}
                       >
                         {elm2.label}
@@ -107,11 +66,6 @@ export default function Nav() {
           ) : (
             <Link
               scroll={true}
-              className={
-                elm.link?.split("/")[1] == pathname?.split("/")[1]
-                  ? "activeMenu"
-                  : ""
-              }
               href={elm.link}
             >
               <span className="link-effect">

@@ -8,7 +8,7 @@ import "../public/assets/css/animation.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ScrollTop from "@/components/common/ScrollTop";
 import { Unbounded, Poppins } from "next/font/google";
-import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
+// import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap.esm").then((module) => {
     // Module is imported, you can access any exported functionality if
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
       <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
         <ParallaxProvider>{children}</ParallaxProvider>
         <ScrollTop />
-        <ScrollTopBehaviour />
+        {/* <ScrollTopBehaviour /> */}
       </body>
     </html>
   );
