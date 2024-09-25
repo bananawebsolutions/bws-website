@@ -15,15 +15,14 @@ export default function ScrollTop() {
   }, []);
 
   return (
-    <div
-      className={`scroll-top ${showScrollTop ? "show" : ""} `}
-      id="whatsapp-button"
-    >
-      <img
-        src="/assets/img/whatsapp.png"
-        alt="whatsapp icon"
-        className="blob-animation"
-      />
+    <div className={`scroll-top ${showScrollTop ? "show" : ""} `}>
+      <a href="https://wa.me/527298880123">
+        <img
+          src="/assets/img/whatsapp.png"
+          alt="whatsapp icon"
+          className="blob-animation"
+        />
+      </a>
     </div>
   );
 }
