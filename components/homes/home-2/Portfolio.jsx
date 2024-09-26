@@ -100,7 +100,7 @@ export default function Portfolio() {
               <div className="portfolio-wrap style2">
                 <div className="portfolio-thumb">
                   <Image
-                    width={746}
+                    width={1200}
                     height={540}
                     src={item.imageSrc}
                     alt="Proyecto de Portafolio"
