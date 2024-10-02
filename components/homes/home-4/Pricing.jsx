@@ -51,7 +51,7 @@ export default function Pricing() {
                     ))}
                   </ul>
                 </div>
-                <Link scroll={false} href="#" className="btn">
+                <Link scroll={false} href={elm.link} className="btn">
                   <span className="link-effect">
                     <span className="effect-1">ESCOGER ESTE PLAN</span>
                     <span className="effect-1">ESCOGER ESTE PLAN</span>

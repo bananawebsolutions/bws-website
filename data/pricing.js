@@ -4,6 +4,7 @@ export const plans = [
     title: "Básico",
     price: 300,
     img: "/assets/img/pricing/plan-basico-mantenimiento.webp",
+    link: "https://bananawebsolutions.gumroad.com/l/hvzov",
 
     features: [
       "Actualizaciones periódicas",
@@ -19,6 +20,7 @@ export const plans = [
     title: "Total",
     price: 650,
     img: "/assets/img/pricing/plan-total-mantenimiento.webp",
+    link: "https://bananawebsolutions.gumroad.com/l/imjar",
 
     features: [
       "Todo lo del plan Básico",
