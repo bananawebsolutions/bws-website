@@ -1,7 +1,46 @@
 "use client";
+
 import Image from "next/image";
+import { sendMail } from "@/utils/send-mail";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+
+const contactFormSchema = z.object({
+  nombre: z.string().min(2, { message: "El nombre es requerido" }),
+  email: z.string().email({ message: "El correo electrónico es inválido" }),
+  website: z.string().url({ message: "Ingresa un link válido" }),
+  mensaje: z.string().min(10, { message: "Por favor, escribe un mensaje de más de 10 caracteres" }),
+})
 
 export default function Contact() {
+  const form = useForm<z.infer<typeof contactFormSchema>>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      nombre: "",
+      email: "",
+      website: "",
+      mensaje: "",
+    }
+  });
+
+  const isLoading = form.formState.isSubmitting;
+
+  const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
+    const mailText = `Name: ${values.nombre}\n  Email: ${values.email}\n  Website: ${values.website}\n Message: ${values.mensaje}`;
+    const response = await sendMail({
+      email: values.email,
+      subject: "Nuevo mensaje de contacto (BWS)",
+      text: mailText,
+    });
+    if (response?.messageId) {
+      toast.success("Formulario enviado, ¡Gracias por contactarnos!");
+    } else {
+      toast.error("Error enviando formulario, inténtalo de nuevo");
+    }
+  }
+
   return ( <div className="contact-area-1 space shape-mockup-wrap" id="contacto">
       <div className="container">
         <div className="row align-items-center justify-content-center">
@@ -26,8 +65,8 @@ export default function Contact() {
                 </p>
               </div>
               <form
-                onSubmit={(e) => e.preventDefault()}
-                className="contact-form ajax-contact"
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="contact-form"
               >
                 <div className="row">
                   <div className="col-md-6">
@@ -36,7 +75,7 @@ export default function Contact() {
                         required
                         type="text"
                         className="form-control style-border"
-                        name="name"
+                        name="nombre"
                         id="name"
                         placeholder="Nombre*"
                       />
@@ -70,7 +109,7 @@ export default function Contact() {
                     <div className="form-group">
                       <textarea
                         required
-                        name="message"
+                        name="mensaje"
                         placeholder="¿Cómo podemos ayudarte?*"
                         id="contactForm"
                         className="form-control style-border"

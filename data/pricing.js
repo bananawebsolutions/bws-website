@@ -2,7 +2,7 @@ export const plans = [
   {
     id: 1,
     title: "Básico",
-    price: 300,
+    price: 16,
     img: "/assets/img/pricing/plan-basico-mantenimiento.webp",
     link: "https://bananawebsolutions.gumroad.com/l/hvzov",
 
@@ -18,7 +18,7 @@ export const plans = [
   {
     id: 2,
     title: "Total",
-    price: 650,
+    price: 35,
     img: "/assets/img/pricing/plan-total-mantenimiento.webp",
     link: "https://bananawebsolutions.gumroad.com/l/imjar",
 
