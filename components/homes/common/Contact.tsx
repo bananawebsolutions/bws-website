@@ -11,8 +11,10 @@ const contactFormSchema = z.object({
   nombre: z.string().min(2, { message: "El nombre es requerido" }),
   email: z.string().email({ message: "El correo electrónico es inválido" }),
   website: z.string().url({ message: "Ingresa un link válido" }),
-  mensaje: z.string().min(10, { message: "Por favor, escribe un mensaje de más de 10 caracteres" }),
-})
+  mensaje: z.string().min(10, {
+    message: "Por favor, escribe un mensaje de más de 10 caracteres",
+  }),
+});
 
 export default function Contact() {
   const form = useForm<z.infer<typeof contactFormSchema>>({
@@ -22,7 +24,7 @@ export default function Contact() {
       email: "",
       website: "",
       mensaje: "",
-    }
+    },
   });
 
   const isLoading = form.formState.isSubmitting;
@@ -39,9 +41,10 @@ export default function Contact() {
     } else {
       toast.error("Error enviando formulario, inténtalo de nuevo");
     }
-  }
+  };
 
-  return ( <div className="contact-area-1 space shape-mockup-wrap" id="contacto">
+  return (
+    <div className="contact-area-1 space shape-mockup-wrap" id="contacto">
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6">
