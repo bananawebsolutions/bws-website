@@ -12,11 +12,13 @@ import Footer3 from "@/components/footers/Footer3";
 import Cta from "@/components/homes/home-3/Cta";
 import Portfolio from "@/components/homes/home-2/Portfolio";
 import Pricing from "@/components/homes/home-4/Pricing";
+import { Toaster } from "sonner";
 
 export default function HomePage1() {
   return (
     <>
       <SearchPopup />
+      <Toaster position="top-center" />
       <Header1 />
       <Hero />
       <About />
