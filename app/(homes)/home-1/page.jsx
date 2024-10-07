@@ -18,7 +18,7 @@ export default function HomePage1() {
   return (
     <>
       <SearchPopup />
-      <Toaster position="top-center" />
+      <Toaster position="top-center" richColors />
       <Header1 />
       <Hero />
       <About />
