@@ -1,7 +1,6 @@
 "use client";
 import { portfolioData2 } from "@/data/portfolio";
 import Image from "next/image";
-import React from "react";
 import Slider from "react-slick";
 
 export default function Portfolio() {

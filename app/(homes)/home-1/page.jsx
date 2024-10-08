@@ -1,6 +1,5 @@
 import MarqueeComponent from "@/components/common/Marquee";
 import Header1 from "@/components/headers/Header1";
-import SearchPopup from "@/components/headers/component/SearchPopup";
 import Contact from "@/components/homes/common/Contact.tsx";
 import Testimonials from "@/components/homes/common/Testimonials";
 import About from "@/components/homes/home-1/About";
@@ -17,7 +16,6 @@ import { Toaster } from "sonner";
 export default function HomePage1() {
   return (
     <>
-      <SearchPopup />
       <Toaster position="top-center" richColors />
       <Header1 />
       <Hero />
