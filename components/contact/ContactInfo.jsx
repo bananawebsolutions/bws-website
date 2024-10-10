@@ -1,6 +1,5 @@
 import { contactInfo2 } from "@/data/contactInfo";
 import Image from "next/image";
-import React from "react";
 
 export default function ContactInfo() {
   return (
