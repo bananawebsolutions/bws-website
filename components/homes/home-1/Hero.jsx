@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import HeroAnimation from "./HeroAnimation";
 
 export default function Hero() {
