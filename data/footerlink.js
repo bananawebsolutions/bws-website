@@ -5,7 +5,7 @@ export const links = [
   { id: 4, href: "/#contact", text: "CONTACTO" },
 ];
 export const links2 = [
-  { id: 5, href: "/terminos-y-condiciones", text: "TÉRMINOS Y CONDICIONES" },
+  { id: 5, href: "/aviso-privacidad", text: "AVISO DE PRIVACIDAD" },
 ];
 // export const links3 = [
 //   { id: 7, href: "/about", text: "About" },
