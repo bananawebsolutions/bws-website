@@ -30,6 +30,7 @@ export default function About() {
             height={250}
             src="/assets/img/normal/doodle-arrow.png"
             alt="dodle of an arrow"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       </div>
@@ -71,6 +72,7 @@ export default function About() {
                         height={13}
                         src="/assets/img/icon/arrow-left-top.svg"
                         alt="icon"
+                        style={{ width: "13px", height: "13px" }}
                       />
                     </Link>
                   </div>

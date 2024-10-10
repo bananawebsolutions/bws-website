@@ -35,6 +35,7 @@ export default function Cta() {
                 src="/assets/img/contact/doodle-face.png"
                 alt="Cara Sonriendo"
                 className="face-doodle"
+                style={{ height: "auto", width: "auto" }}
               />
               <span className="link-effect">
                 <span className="effect-1">HABLEMOS</span>

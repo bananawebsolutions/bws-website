@@ -4775,12 +4775,14 @@ canvas {
 @media screen and (max-width: 991px) {
   .doodle-portfolio {
     width: 130px;
+    height:"auto";
   }
 }
 
 @media screen and (max-width: 768px) {
   .doodle-portfolio {
     width: 100px;
+    height: "auto";
   }
 }
 
@@ -4819,7 +4821,7 @@ canvas {
 
 .face-doodle {
   width: 60px;
-  height: 60px;
+  height: "auto";
 }
 
 @media (max-width: 575px) {
@@ -4829,7 +4831,7 @@ canvas {
 
   .face-doodle {
     width: 40px;
-    height: 40px;
+    height: "auto";
   }
 }
 

@@ -99,6 +99,7 @@ export default function SideMenu({ isOpen, setIsOpen }) {
               src="/assets/img/contact/doodle-face.png"
               alt="Cara Sonriendo"
               className="face-doodle"
+              style={{ height: "auto", width: "auto" }}
             />
             Hablemos
           </Link>

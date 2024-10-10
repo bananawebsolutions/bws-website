@@ -31,6 +31,7 @@ export default function Pricing() {
                     height={350}
                     alt="Caja de Presentación Mantenimiento Web"
                     className="img-maintenance-box"
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </div>
                 <h4 className="pricing-card_title">{elm.title}</h4>

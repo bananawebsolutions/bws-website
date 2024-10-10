@@ -61,6 +61,7 @@ export default function Contact() {
                       height={180}
                       alt="Contact Doodle"
                       className="doodle-contact"
+                      style={{ width: "auto", height: "auto" }}
                     />
                   </div>
                   <h2 className="sec-title">¿Qué Proyecto Tienes en Mente?</h2>

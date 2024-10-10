@@ -77,8 +77,8 @@ export default function Portfolio() {
                 <div>
                   <Image
                     src="/assets/img/portfolio/diamond-doodle.png"
-                    height={160}
-                    width={160}
+                    height={130}
+                    width={130} 
                     alt="Doodle Portfolio"
                     className="doodle-portfolio"
                   />

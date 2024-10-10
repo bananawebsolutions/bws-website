@@ -28,6 +28,7 @@ export default function ContactInfo() {
                       height={13}
                       src="/assets/img/icon/arrow-left-top.svg"
                       alt="icon"
+                      style={{ width: "13px", height: "13px" }}
                     />
                   </a>
                 </div>
