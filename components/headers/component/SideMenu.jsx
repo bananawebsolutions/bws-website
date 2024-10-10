@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 // import MobileMenuSocials from "./MobileMenuSocials";
 import Link from "next/link";
@@ -27,13 +28,7 @@ export default function SideMenu({ isOpen, setIsOpen }) {
         <div className="widget footer-widget">
           <div className="widget-about">
             <div className="footer-logo">
-              <Link scroll={false} href="/">
-                {/* <Image
-                  width={86}
-                  height={24}
-                  src="/assets/img/logo-white.svg"
-                  alt="Ovation"
-                /> */}
+              <Link href="/">
                 <div
                   className="header-logo"
                   style={{
@@ -46,22 +41,15 @@ export default function SideMenu({ isOpen, setIsOpen }) {
                     src="/assets/img/bws-banana-icon.png"
                     width={30}
                     height={30}
+                    alt="Banana Web Solutions Logo"
                     style={{ filter: "invert(1)" }}
                   />
-                  <Link
+                  <div
                     className="logo-style"
-                    scroll={false}
-                    href="/"
                     style={{ color: "white" }}
                   >
-                    {/* <Image */}
-                    {/*   width={86} */}
-                    {/*   height={24} */}
-                    {/*   src="/assets/img/logo.svg" */}
-                    {/*   alt="logo" */}
-                    {/* /> */}
                     BWS
-                  </Link>
+                  </div>
                 </div>
               </Link>
             </div>

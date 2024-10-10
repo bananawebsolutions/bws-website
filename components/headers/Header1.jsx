@@ -1,10 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import SideMenu from "./component/SideMenu";
 import MobileNav from "./component/MobileNav";
 // import MobileMenuSocials from "./component/MobileMenuSocials";
 import Nav from "./component/Nav";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -57,9 +57,6 @@ export default function Header1() {
   return (
     <>
       <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
-      {/*--==============================
-   
-    ============================== */}
       <div
         className={`mobile-menu-wrapper ${
           mobileMenuOpen ? "body-visible" : ""
@@ -73,13 +70,7 @@ export default function Header1() {
             <i className="fas fa-times"></i>
           </button>
           <div className="mobile-logo">
-            <Link scroll={false} href="/">
-              {/* <Image
-                width={86}
-                height={24}
-                src="/assets/img/logo.svg"
-                alt="Ovation"
-              /> */}
+            <Link href="/">
               <div
                 className="header-logo"
                 style={{
@@ -92,10 +83,11 @@ export default function Header1() {
                   src="/assets/img/bws-banana-icon.png"
                   width={30}
                   height={30}
+                  alt="Banana Web Solutions Logo"
                 />
-                <Link className="logo-style" scroll={false} href="/">
+                <div className="logo-style">
                   BWS
-                </Link>
+                </div>
               </div>
             </Link>
           </div>
@@ -113,7 +105,7 @@ export default function Header1() {
               <a href="tel:+52798880123">+52 798 880 1234</a>
             </h6>
             <h6>
-              <a href="mailto:frisk.agency@mail.com">
+              <a href="mailto:contacto@bananawebsolutions.com">
                 contacto
                 <br />
                 @bananawebsolutions.com
@@ -125,9 +117,9 @@ export default function Header1() {
           </div> */}
         </div>
       </div>
-      {/*--==============================
-	Header Area
-    ==============================*/}
+
+      {/*--============================== Header Area ==============================*/}
+
       <header className="nav-header  header-layout1">
         <div className={`sticky-wrapper ${isScrolled ? "header-sticky" : ""} `}>
           {/*-- Main Menu Area */}
@@ -135,7 +127,8 @@ export default function Header1() {
             <div className="container-fluid">
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
-                  <div
+                  <Link
+                    href="/"
                     className="header-logo"
                     style={{
                       display: "flex",
@@ -147,17 +140,12 @@ export default function Header1() {
                       src="/assets/img/bws-banana-icon.png"
                       width={30}
                       height={30}
+                      alt="Banana Web Solutions Logo"
                     />
-                    <Link className="logo-style" scroll={false} href="/">
-                      {/* <Image */}
-                      {/*   width={86} */}
-                      {/*   height={24} */}
-                      {/*   src="/assets/img/logo.svg" */}
-                      {/*   alt="logo" */}
-                      {/* /> */}
+                    <div className="logo-style">
                       BWS
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
                 <div className="col-auto ms-auto">
                   <nav className="main-menu d-none d-lg-inline-block">
@@ -179,26 +167,6 @@ export default function Header1() {
                 </div>
                 <div className="col-auto d-none d-lg-block">
                   <div className="header-button">
-                    {/* <button */}
-                    {/*   type="button" */}
-                    {/*   className="search-btn searchBoxToggler" */}
-                    {/*   onClick={() => */}
-                    {/*     document */}
-                    {/*       .getElementsByClassName("popup-search-box")[0] */}
-                    {/*       ?.classList.toggle("show") */}
-                    {/*   } */}
-                    {/* > */}
-                    {/*   <Image */}
-                    {/*     width={24} */}
-                    {/*     height={24} */}
-                    {/*     src="/assets/img/icon/search.svg" */}
-                    {/*     alt="icon" */}
-                    {/*   /> */}
-                    {/*   <span className="link-effect"> */}
-                    {/*     <span className="effect-1">SEARCH</span> */}
-                    {/*     <span className="effect-1">SEARCH</span> */}
-                    {/*   </span> */}
-                    {/* </button> */}
                     <button
                       type="button"
                       className="sidebar-btn sideMenuToggler"
