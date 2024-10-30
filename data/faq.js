@@ -12,7 +12,7 @@ export const faqs = [
     id: 2,
     question: `Soluciones Web
 `,
-    answer: `¿Ya tienes un sitio web o e-commerce pero requieres alguna solución adicional para tus usuarios o tu flujo de trabajo? Nosotros lo desarrollamos a la medida.
+    answer: `¿Ya tienes un sitio web pero requieres alguna solución adicional para ti o tus usuarios? Nosotros lo desarrollamos a la medida.
 `,
   },
   //   {
