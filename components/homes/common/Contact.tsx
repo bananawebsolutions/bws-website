@@ -10,8 +10,8 @@ import { toast } from "sonner";
 const contactFormSchema = z.object({
   nombre: z.string().min(2, { message: "El nombre es requerido" }),
   email: z.string().email({ message: "El correo electrónico es inválido" }),
-  website: z.string().regex(/\.[a-z]{2,}$/i, { 
-    message: "Ingresa un link válido" 
+  website: z.string().regex(/\.[a-z]{2,}$/i, {
+    message: "Ingresa un link válido",
   }),
   mensaje: z.string().min(10, {
     message: "Por favor, escribe un mensaje de más de 10 caracteres",
@@ -85,7 +85,9 @@ export default function Contact() {
                         placeholder="Nombre*"
                       />
                       {form.formState.errors.nombre && (
-                        <p className="error-message">{form.formState.errors.nombre.message}</p>
+                        <p className="error-message">
+                          {form.formState.errors.nombre.message}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -98,7 +100,9 @@ export default function Contact() {
                         placeholder="Correo electrónico*"
                       />
                       {form.formState.errors.email && (
-                        <p className="error-message">{form.formState.errors.email.message}</p>
+                        <p className="error-message">
+                          {form.formState.errors.email.message}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -111,7 +115,9 @@ export default function Contact() {
                         placeholder="Link de tu sitio web"
                       />
                       {form.formState.errors.website && (
-                        <p className="error-message">{form.formState.errors.website.message}</p>
+                        <p className="error-message">
+                          {form.formState.errors.website.message}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -123,13 +129,19 @@ export default function Contact() {
                         className="form-control style-border"
                       ></textarea>
                       {form.formState.errors.mensaje && (
-                        <p className="error-message">{form.formState.errors.mensaje.message}</p>
+                        <p className="error-message">
+                          {form.formState.errors.mensaje.message}
+                        </p>
                       )}
                     </div>
                   </div>
                 </div>
                 <div className="form-btn col-12">
-                  <button type="submit" className="btn mt-20" disabled={isLoading}>
+                  <button
+                    type="submit"
+                    className="btn mt-20"
+                    disabled={isLoading}
+                  >
                     <span className="link-effect">
                       <span className="effect-1">ENVIAR MENSAJE</span>
                       <span className="effect-1">ENVIAR MENSAJE</span>
