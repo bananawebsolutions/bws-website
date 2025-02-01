@@ -43,6 +43,15 @@
     .btn {
         width: 100%;
     }
+    .text-before-price {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $body-font;
+        letter-spacing: 0.1px;
+    }
+    .info-price-text {
+        font-size: 14px;
+    }
 }
 @include ml {
     .pricing-card .pricing-card_price {
