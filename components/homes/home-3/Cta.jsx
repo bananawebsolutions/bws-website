@@ -38,7 +38,7 @@ export default function Cta() {
                         <Link
                             scroll={true}
                             className="circle-btn btn bg-theme text-title gsap-magnetic flex-cta"
-                            href="/#contacto"
+                            href="https://wa.me/527298880123?text=Hola,%20estoy%20interesado%20en%20un%20proyecto%20web"
                         >
                             <Image
                                 width={60}
