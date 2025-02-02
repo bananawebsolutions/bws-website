@@ -17,7 +17,7 @@ export default function Pricing() {
                 </div>
                 <div className="row gy-4 justify-content-center">
                     {plans.map((elm, i) => (
-                        <div key={i} className="col-lg-6 col-md-6">
+                        <div key={i} className="col-xl-6 col-xxl-4 col-md-10">
                             <div className="pricing-card bg-smoke">
                                 <div
                                     style={{
