@@ -18,7 +18,18 @@ export default function Pricing() {
                 <div className="row gy-4 justify-content-center">
                     {plans.map((elm, i) => (
                         <div key={i} className="col-xl-6 col-xxl-4 col-md-10">
-                            <div className="pricing-card bg-smoke">
+                            <div
+                                className={`pricing-card bg-smoke ${
+                                    elm.morePopular
+                                        ? "border border-dark border-3 position-relative"
+                                        : ""
+                                }`}
+                            >
+                                {elm.morePopular && (
+                                    <span className="popular-tag">
+                                        Más popular
+                                    </span>
+                                )}
                                 <div
                                     style={{
                                         display: "flex",

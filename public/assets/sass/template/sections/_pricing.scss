@@ -1,3 +1,13 @@
+.popular-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+}
 .pricing-card {
     padding: 40px;
     .pricing-card_title {

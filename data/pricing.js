@@ -20,6 +20,7 @@ export const plans = [
     {
         id: 2,
         title: "Total",
+        morePopular: true,
         price: 1999,
         img: "/assets/img/pricing/plan-total-mantenimiento-web.webp",
         link: "https://wa.me/527298880123?text=Hola,%20estoy%20interesado%20en%20el%20plan%total%20de%20mantenimiento%20web",
