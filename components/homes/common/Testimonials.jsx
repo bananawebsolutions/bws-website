@@ -2,7 +2,6 @@
 
 import { testimonialData } from "@/data/testimonials";
 import Image from "next/image";
-import React from "react";
 import Slider from "react-slick";
 
 export default function Testimonials() {
