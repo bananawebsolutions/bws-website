@@ -1,46 +1,54 @@
-import { featureData4 } from "@/data/features";
-import React from "react";
+import { featureData4 } from "../../data/features";
 
 export default function Features2() {
-  return (
-    <div className="feature-area-1 space">
-      <div className="container">
-        <div className="title-container">
-          <h2 className="text-center web-solutions-title">
-            Soluciones web integrales para tu negocio
-          </h2>
-        </div>
-        <div className="row gy-4 align-items-center justify-content-center">
-          {featureData4.map((elm, i) => (
-            <div key={i} className="col-xxl-6 col-xl-6">
-              <div className="feature-card style-grid">
-                <div
-                  className="feature-card-icon"
-                  style={{ position: "relative" }}
-                >
-                  <div style={{ position: "relative", zIndex: 1 }}>
-                    {elm.iconComponent}
-                  </div>
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      right: "-6px",
-                    }}
-                    className="repeated-icon"
-                  >
-                    {elm.iconComponentRepeated}
-                  </div>
+    return (
+        <div className="feature-area-1 space">
+            <div className="container">
+                <div className="title-container">
+                    <h2 className="text-center web-solutions-title">
+                        Soluciones web integrales para tu negocio
+                    </h2>
                 </div>
-                <div className="feature-card-details">
-                  <h4 className="feature-card-title">{elm.title}</h4>
-                  <p className="feature-card-text">{elm.text}</p>
+                <div className="row gy-4 align-items-center justify-content-center">
+                    {featureData4.map((elm, i) => (
+                        <div key={i} className="col-xxl-6 col-xl-6">
+                            <div className="feature-card style-grid">
+                                <div
+                                    className="feature-card-icon"
+                                    style={{ position: "relative" }}
+                                >
+                                    <div
+                                        style={{
+                                            position: "relative",
+                                            zIndex: 1,
+                                        }}
+                                    >
+                                        {elm.iconComponent}
+                                    </div>
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            top: 0,
+                                            right: "-6px",
+                                        }}
+                                        className="repeated-icon"
+                                    >
+                                        {elm.iconComponentRepeated}
+                                    </div>
+                                </div>
+                                <div className="feature-card-details">
+                                    <h4 className="feature-card-title">
+                                        {elm.title}
+                                    </h4>
+                                    <p className="feature-card-text">
+                                        {elm.text}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-              </div>
             </div>
-          ))}
         </div>
-      </div>
-    </div>
-  );
+    );
 }

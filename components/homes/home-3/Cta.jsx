@@ -1,9 +1,9 @@
 "use client";
 
-import addGsap from "@/utils/addGsap";
+import addGsap from "../../../utils/addGsap";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function Cta() {
     useEffect(() => {

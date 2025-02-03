@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonialData } from "@/data/testimonials";
+import { testimonialData } from "../../../data/testimonials";
 import Image from "next/image";
 import Slider from "react-slick";
 

@@ -11,7 +11,7 @@ import {
     ServerIconYellow,
     UserIcon,
     UserIconYellow,
-} from "@/icons";
+} from "../icons/index";
 
 export const featureData = [
     {

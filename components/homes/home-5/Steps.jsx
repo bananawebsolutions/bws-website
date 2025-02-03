@@ -1,31 +1,30 @@
-import { steps } from "@/data/steps";
-import React from "react";
+import { steps } from "../../../data/steps";
 
 export default function Steps() {
-  return (
-    <div className="feature-area-1 space" style={{ background: "black" }}>
-      <div className="container">
-        <div className="title-area text-center">
-          <h2 className="sec-title text-smoke">
-            Proceso de &nbsp; 3 &nbsp; Pasos
-          </h2>
-          <div className="doodle-process">
-            <svg
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="1089.000000pt"
-              height="831.000000pt"
-              viewBox="0 0 1089.000000 831.000000"
-              preserveAspectRatio="xMidYMid meet"
-              className="doodle-process-svg"
-            >
-              <g
-                transform="translate(0.000000,831.000000) scale(0.100000,-0.100000)"
-                fill="#fade36"
-                stroke="none"
-              >
-                <path
-                  d="M4970 8263 c-225 -10 -743 -48 -905 -68 -85 -11 -498 -103 -740 -165
+    return (
+        <div className="feature-area-1 space" style={{ background: "black" }}>
+            <div className="container">
+                <div className="title-area text-center">
+                    <h2 className="sec-title text-smoke">
+                        Proceso de &nbsp; 3 &nbsp; Pasos
+                    </h2>
+                    <div className="doodle-process">
+                        <svg
+                            version="1.0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1089.000000pt"
+                            height="831.000000pt"
+                            viewBox="0 0 1089.000000 831.000000"
+                            preserveAspectRatio="xMidYMid meet"
+                            className="doodle-process-svg"
+                        >
+                            <g
+                                transform="translate(0.000000,831.000000) scale(0.100000,-0.100000)"
+                                fill="#fade36"
+                                stroke="none"
+                            >
+                                <path
+                                    d="M4970 8263 c-225 -10 -743 -48 -905 -68 -85 -11 -498 -103 -740 -165
 -462 -119 -655 -180 -915 -289 -149 -62 -425 -196 -459 -223 -14 -10 -43 -27
 -65 -37 -59 -26 -411 -238 -426 -256 -7 -9 -54 -40 -104 -69 -114 -67 -186
 -130 -186 -161 0 -47 30 -38 163 51 70 48 174 114 230 148 56 35 173 106 260
@@ -78,23 +77,27 @@ export default function Steps() {
 805 -23 222 22 544 102 735 14 33 26 66 26 73 0 8 37 87 82 175 120 234 284
 474 435 634 32 34 72 77 89 95 138 150 415 378 619 511 200 130 586 325 645
 326 8 0 -38 -49 -102 -110z"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div className="row gx-0 gy-40">
-          {steps.map((step, index) => (
-            <div key={index} className="col-lg-4">
-              <div className="process-card">
-                <div className="process-card-number">{step.number}</div>
-                <h4 className="process-card-title">{step.title}</h4>
-                <p className="process-card-text">{step.text}</p>
-              </div>
+                                />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div className="row gx-0 gy-40">
+                    {steps.map((step, index) => (
+                        <div key={index} className="col-lg-4">
+                            <div className="process-card">
+                                <div className="process-card-number">
+                                    {step.number}
+                                </div>
+                                <h4 className="process-card-title">
+                                    {step.title}
+                                </h4>
+                                <p className="process-card-text">{step.text}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-          ))}
         </div>
-      </div>
-    </div>
-  );
+    );
 }

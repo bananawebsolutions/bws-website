@@ -1,54 +1,10 @@
-"use client";
+import ClientLayout from "./ClientLayout";
 
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
-import "../public/assets/css/vendor.css";
-import "../public/assets/sass/style.scss";
-import "../public/assets/css/animation.css";
-import { ParallaxProvider } from "react-scroll-parallax";
-import ScrollTop from "@/components/common/ScrollTop";
-import { Unbounded, Poppins } from "next/font/google";
-
-if (typeof window !== "undefined") {
-  import("bootstrap/dist/js/bootstrap.esm").then((module) => {
-    // Module is imported, you can access any exported functionality if
-  });
-}
-// wow js
-
-const unbounded = Unbounded({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--title-font",
-});
-
-// Poppins font
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--body-font",
-});
+export const metadata = {
+    title: "Banana Web Solutions",
+    description: "Banana Web Solutions",
+};
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
-  let wow = null;
-  useEffect(() => {
-    const { WOW } = require("wowjs");
-    wow = new WOW({
-      live: false,
-      mobile: false,
-    });
-    wow.init();
-  }, [path]);
-  // useEffect(() => {
-  //   wow?.sync();
-  // }, [path]);
-  return (
-    <html lang="es">
-      <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
-        <ParallaxProvider>{children}</ParallaxProvider>
-        <ScrollTop />
-      </body>
-    </html>
-  );
+    return <ClientLayout>{children}</ClientLayout>;
 }
