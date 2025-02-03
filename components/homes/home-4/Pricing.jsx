@@ -20,10 +20,19 @@ export default function Pricing() {
                         <div key={i} className="col-xl-6 col-xxl-4 col-md-10">
                             <div
                                 className={`pricing-card bg-smoke ${
-                                    elm.morePopular
-                                        ? "border border-dark border-3 position-relative"
-                                        : ""
+                                    elm.morePopular ? "position-relative" : ""
                                 }`}
+                                style={{
+                                    borderColor: elm.morePopular
+                                        ? "#fade36"
+                                        : "transparent",
+                                    borderWidth: elm.morePopular
+                                        ? "3px"
+                                        : "0px",
+                                    borderStyle: elm.morePopular
+                                        ? "solid"
+                                        : "none",
+                                }}
                             >
                                 {elm.morePopular && (
                                     <span className="popular-tag">
