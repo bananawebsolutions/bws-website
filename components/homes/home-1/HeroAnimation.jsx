@@ -11,6 +11,10 @@ const HeroAnimation = () => {
         };
     }, []);
 
+    if (!mounted) {
+        return null;
+    }
+
     return (
         <>
             {mounted && (
