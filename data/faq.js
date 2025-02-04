@@ -26,7 +26,7 @@ export const faqs = [
     },
     {
         id: 4,
-        question: `Mantenimiento y Hosting`,
+        question: `Mantenimiento Web`,
         answer: `Ofrecemos planes de suscripción para mantener tu sitio web actualizado y seguro. 
     Elige entre mantenimiento web básico o 
     una solución integral que incluye hosting y soporte técnico.`,

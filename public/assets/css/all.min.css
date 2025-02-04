@@ -4706,50 +4706,53 @@ canvas {
     left: 670px;
 }
 
+.step-number-with-doodle {
+    position: relative;
+    display: inline-block;
+}
+
+.step-number-with-doodle svg {
+    position: absolute;
+    top: 50%; /* Vertically center the SVG relative to the number */
+    left: 100%; /* Position the SVG immediately to the right of the number */
+    transform: translate(
+        -87px,
+        -50%
+    ); /* Shift right by 10px and adjust vertical centering */
+    height: auto;
+    pointer-events: none; /* Ensures that the SVG doesn't interfere with clicking the number */
+}
+
 .doodle-process-svg {
     width: 130px;
 }
 
 @media screen and (max-width: 1400px) {
-    .doodle-process {
-        left: 570px;
-        bottom: -520px;
-    }
     .doodle-process-svg {
         width: 100px;
     }
-}
 
-@media screen and (max-width: 1200px) {
-    .doodle-process {
-        left: 480px;
-        bottom: -520px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .doodle-process {
-        left: 365px;
-        bottom: -520px;
+    .step-number-with-doodle svg {
+        transform: translate(-65px, -50%);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .doodle-process {
-        left: 270px;
-        bottom: -530px;
-    }
     .doodle-process-svg {
         width: 70px;
+    }
+    .step-number-with-doodle svg {
+        transform: translate(-49px, -50%);
     }
 }
 
 @media screen and (max-width: 564px) {
-    .doodle-process {
-        left: 280px;
-    }
     .doodle-process-svg {
         width: 75px;
+    }
+
+    .step-number-with-doodle svg {
+        transform: translate(-49px, -50%);
     }
 }
 
