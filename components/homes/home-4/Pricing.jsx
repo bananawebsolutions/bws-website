@@ -71,8 +71,8 @@ export default function Pricing() {
                                         <span className="duration">
                                             /mes (MXN)
                                         </span>
-                                    </h4>*/}
-                                </div>
+                                    </h4>
+                                </div>*/}
                                 <p>{elm.title}</p>
                                 <div className="checklist">
                                     <ul>
