@@ -61,7 +61,7 @@ export default function Pricing() {
                                 <h4 className="pricing-card_title">
                                     {elm.title}
                                 </h4>
-                                <div className="price-card-wrap">
+                                {/*<div className="price-card-wrap">
                                     <h4 className="pricing-card_price">
                                         <span className="text-before-price">
                                             Desde{" "}
@@ -71,7 +71,7 @@ export default function Pricing() {
                                         <span className="duration">
                                             /mes (MXN)
                                         </span>
-                                    </h4>
+                                    </h4>*/}
                                 </div>
                                 <p>{elm.title}</p>
                                 <div className="checklist">
