@@ -77,15 +77,15 @@ export const portfolioData2 = [
     },
     {
         id: 12,
-        imageSrc: "/assets/img/portfolio/inowat.webp",
-        category: "Sitio Web",
-        title: "Inowat",
-    },
-    {
-        id: 13,
         imageSrc: "/assets/img/portfolio/mr-pipo-website.webp",
         category: "Landing Page",
         title: "Mr. Pipo",
+    },
+    {
+        id: 13,
+        imageSrc: "/assets/img/portfolio/inowat.webp",
+        category: "Sitio Web",
+        title: "Inowat",
     },
 ];
 
