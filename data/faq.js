@@ -38,9 +38,8 @@ export const faqs = [
     },
     {
         id: 6,
-        question: `Copywriting`,
-        answer: `Nos encargamos de que tu contenido sea persuasivo y de calidad.
-    Optimizamos el contenido de tu sitio web para conectar con tu audiencia e incrementar la tasa de conversión en tu sitio.
+        question: `Chatbot`,
+        answer: `Implementamos chatbots personalizados para mejorar la atención al cliente y optimizar la comunicación en tu sitio web. O bien para generar leads y ventas de manera automatizada mediante WhatsApp u otros medios.
     `,
     },
 ];
