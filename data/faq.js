@@ -39,7 +39,7 @@ export const faqs = [
     {
         id: 6,
         question: `Chatbot`,
-        answer: `Implementamos chatbots personalizados para mejorar la atención al cliente y optimizar la comunicación en tu sitio web. O bien para generar leads y ventas de manera automatizada mediante WhatsApp u otros medios.
+        answer: `Implementamos chatbots personalizados para mejorar la atención al cliente y optimizar la comunicación en tu sitio web. Además, ofrecemos soluciones para generar leads y ventas de manera automatizada a través de WhatsApp y otros canales.
     `,
     },
 ];
